@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f2ec728e-2381-4995-9183-50d7c078ec2b}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>ToyshopReplication</Name>
+    <RootNamespace>ToyshopReplication</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="HW3\BrowseToys.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW3\BrowseToys.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW3\BrowseToys.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="HW3\Checkout.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW3\Checkout.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW3\Checkout.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="HW3\OrganTreeBusinessDomain.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW3\OrganTreeBusinessDomain.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW3\OrganTreeBusinessDomain.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="HW3\OrganTree\FamilyTreeModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW3\OrganTree\FamilyTreeModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW3\OrganTree\FamilyTreeModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="HW3\OrganTree\OrganTreeDomainModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW3\OrganTree\OrganTreeDomainModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW3\OrganTree\OrganTreeDomainModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="HW3\OrganTree\PatientModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW3\OrganTree\PatientModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW3\OrganTree\PatientModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="HW3\ToyshopDomainModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW3\ToyshopDomainModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW3\ToyshopDomainModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="HW3\ToyshopOrdersModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW3\ToyshopOrdersModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW3\ToyshopOrdersModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Woodshop Brainstorm.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Woodshop Brainstorm.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Woodshop Brainstorm.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="HW3\OrganTree" />
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ToyshopReplication.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="HW3" />
+  </ItemGroup>
+</Project>

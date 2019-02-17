@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a0aea9a5-60d2-4080-9933-40532ae40c44" name="UMLUseCaseDiagram1" linkedPackageId="f039df0d-f35f-47b5-8994-88d49ae5de25" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="e138261f-f897-4e33-b91a-6e4d7a9f11e2">
+      <elementDefinition Id="01e36b35-9f71-4dcf-b9e7-e16f78ab25a0" />
+      <body>Shop for tools
+Look online for reviews
+fill shopping cart and checkout
+Review status of order
+Cancel an order
+Receive Shipping notification.</body>
+    </comment>
+    <comment Id="a141da39-6305-432a-a390-2d5b8c925eab">
+      <elementDefinition Id="5250b974-c94d-45e5-aa0e-69ee8b53d711" />
+      <body>Constraints:
+- Web based solution to achieve ubiquitous reach
+- Hosted by third party (We will have to help find 3rd party)</body>
+    </comment>
+    <comment Id="5e6c9019-5842-48a6-8355-005637804b19">
+      <elementDefinition Id="42ed1e64-8c5e-40cc-8123-f30fb2fccd34" />
+      <body>Process Orders
+Read Sales Reports
+Manage Customer Accounts
+Manage Inventory</body>
+    </comment>
+    <comment Id="801273c9-5484-488b-a29e-9dcfc6ed11a5">
+      <elementDefinition Id="c0b6083d-2d60-4bb2-a9db-1817934f94ef" />
+      <body>Functional Requirements</body>
+      <annotatedElements>
+        <commentMoniker Id="e138261f-f897-4e33-b91a-6e4d7a9f11e2" />
+        <commentMoniker Id="5e6c9019-5842-48a6-8355-005637804b19" />
+        <commentMoniker Id="c476542c-b062-4507-a8fb-949a6c596ce3" />
+      </annotatedElements>
+    </comment>
+    <comment Id="c476542c-b062-4507-a8fb-949a6c596ce3">
+      <elementDefinition Id="2d0af42f-e51b-4f93-851d-34b90c2e87d3" />
+      <body>Send out coupons to frequent buyers</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="b7a673e4-e921-470c-b06f-52168bde38f2">
+      <profileInstance Id="63fcfdd3-7430-4d2e-8885-f36addabf71b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4d1a26d8-ed1e-4184-9fd5-41aa8d946887">
+      <profileInstance Id="d6af1327-9d7c-44c3-b30a-e1a82b515b41" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="df27b4bf-69a9-41ed-88f8-3103e907af36" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d17bda7-4ebb-45a9-af0b-18649860b6ef" />
+        <targetEnds>
+          <association Id="db46c642-109f-4c26-9db3-bcaef85f8c47" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Woodshop Toys" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="d372f65e-f149-4f52-9312-0b0c8968ba45" LastKnownName="Woodshop Toys" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f3dbb70-2bda-449b-949b-d620b188daac" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="619f0402-cdfc-4ea1-ac69-6a9d7bd82930" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2c2691d-0587-4c31-b38e-82e52dcd786a" name="Woodshop Toys" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="133bb38b-0b12-4cf1-8cb9-19fff0f68c38" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="987817f7-43cc-48ba-a8c1-2ad26851e74f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="d372f65e-f149-4f52-9312-0b0c8968ba45" name="Woodshop Toys" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="f30a83bc-9a85-436b-b1a4-6d36b83089f5">
+            <elementDefinition Id="f0377f00-3b45-4d87-87f5-1769fbf159b9" />
+            <body>Woodshop Toys
+a small brick-and-mortar shop that wants an online footprint to supplement in-store sales</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="ce0a3f0b-dd59-49b2-a41e-2bce95cc5016" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="81a0191c-2b88-4c37-8ce3-7f565c8e512a" name="Store Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94301f5d-1ce6-4357-8aca-452ace85d370" />
+        <targetEnds>
+          <association Id="16d9afbe-9318-4039-a0a9-56a15dc5b503" isDerived="false" sourceEndRoleName="Store Manager" targetEndRoleName="Woodshop Toys" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="d372f65e-f149-4f52-9312-0b0c8968ba45" LastKnownName="Woodshop Toys" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5479d7a-c2d9-4bac-b218-d73fbb735dfc" name="Store Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1f38f4a6-627a-4039-a197-46f3cc2e39d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c314c48-2570-4bbf-8274-02e18139af61" name="Woodshop Toys" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba2ed56e-4966-4230-84f0-3d3961ceb3c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2edb59c0-6640-4eff-ae20-f09288879e38" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="221fc4d3-af2a-477a-b0b1-3c6bd9064896" name="Time" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d3703f0b-7c5f-4558-ac4f-c91077d3575a" />
+        <targetEnds>
+          <association Id="0e678d83-9b24-4146-a00e-ad77c3bf139d" isDerived="false" sourceEndRoleName="Time" targetEndRoleName="Woodshop Toys" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="d372f65e-f149-4f52-9312-0b0c8968ba45" LastKnownName="Woodshop Toys" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf705709-f8c7-41e2-8f8b-c48cc7931949" name="Time" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="58028258-7c9c-4e63-866b-0684c70b5467" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ca813f1-da90-4a3f-b194-c7015c486a31" name="Woodshop Toys" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3853b1a2-b75f-4cd7-910a-d78db000d981" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2fd6f11e-5d99-415a-9a1d-53c0f292b620" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f039df0d-f35f-47b5-8994-88d49ae5de25" name="ToyshopReplication">
+    <elementDefinition Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd" />
+  </package>
+</useCaseModelRoot>

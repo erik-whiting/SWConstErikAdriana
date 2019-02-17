@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="b3ec6be1-442d-4718-9471-46118f65daa8" name="FamilyTreeModel" linkedPackageId="dc042da9-912d-434b-b4d7-a4a6493d33af" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="3b707ac2-2e69-47cf-9f29-a33bd7408921">
+      <elementDefinition Id="6afde6d9-1ab7-409b-830d-f98d58cf04a2" />
+      <body>Family member's personal data will be inherited from the "Patient" table since these entities will also be patients</body>
+      <annotatedElements>
+        <classMoniker Id="c1c964d8-00d7-4df0-944d-2bda8e3fbd57" LastKnownName="Patient Family Member" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="a1719348-9a13-48cf-a374-3ee831dac5ac">
+      <profileInstance Id="3ac1138e-fb22-4d91-be7a-91bee5a2f7d4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="79f40473-45ae-4dff-ae5c-a540d8e3d94a">
+      <profileInstance Id="1453cc2e-eb75-4cd7-8b42-04304bd3a2e5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="19583c2b-62b3-4884-8fb8-dbd6e41ee8b3" name="Family Tree" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="11e2fe86-fd6b-4c32-9d4b-b52ef917c425" />
+        <targetEnds>
+          <association Id="0a22cebe-664b-43b7-88ee-0290cb62b8d9" isDerived="false" sourceEndRoleName="Family Tree" targetEndRoleName="Family Members" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e4426d8d-af64-4ca2-892b-f3eff6a159d5" LastKnownName="Family Members" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d649134-1d62-4a05-8ee8-cd2598253880" name="Family Tree" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="7ebe8bb5-4833-498d-bd0f-5ff5fc621309" name="Lower" value="1">
+                      <elementDefinition Id="885afd6c-ae6b-4e40-9c88-26225ce50399" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="354da4c8-981f-41c3-87c3-9b52f3f37f59" name="Upper" value="*">
+                      <elementDefinition Id="1bd7bbf2-3cdd-47d4-84fe-753182e24c27" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="29957d7c-e526-4857-8df8-bec7e199f02a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd3aab4a-322e-4a24-886d-9a8f5ba6564c" name="Family Members" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="f9c5ba8f-9786-4bdb-a781-a65d1978f659" name="Lower" value="1">
+                      <elementDefinition Id="da748c12-f051-4e80-9a88-97bc3aa01717" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="fec46011-22bf-484a-b848-895aa47b97ee" name="Upper" value="*">
+                      <elementDefinition Id="ef3cbd63-76f1-441d-9ab2-1a014905994e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="9eb8154d-f648-4eaa-85c1-244984bf0571" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c2115388-7e63-4fc3-8f61-d32635675baa" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="8fad9b8b-beac-49f2-ba6a-e4f3abb8a8ec" name="Patient's Family members" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b624cd3f-9729-4dbe-a7b1-d2f98413f024" />
+          </property>
+          <property Id="0799cb73-9a1d-40ff-b17d-b6b8406bae03" name="Last Updated" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b3c085bc-70e4-48b9-821f-fca0bfc57374" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e4426d8d-af64-4ca2-892b-f3eff6a159d5" name="Family Members" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b69cf20d-85cd-4e3c-b30f-39318610985c" />
+        <targetEnds>
+          <association Id="c656557d-323c-44b0-a680-0dd0caea48f8" isDerived="false" sourceEndRoleName="Family Members" targetEndRoleName="Patient Family Member" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c1c964d8-00d7-4df0-944d-2bda8e3fbd57" LastKnownName="Patient Family Member" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01503a80-f9ec-4030-9161-f1bf97258e86" name="Family Members" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="279284fd-1666-49d5-88ef-85e5c644f1f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="221b960b-ba31-409e-b072-d9e6885e0704" name="Patient Family Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="f0f9c8b9-a98a-4679-a0ad-0ca42530392c" name="Lower" value="*">
+                      <elementDefinition Id="2dc36472-e944-4167-97cd-a211fc0749ed" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b094f0a8-2b77-446c-b3b9-ae1d6ca0641f" name="Upper" value="*">
+                      <elementDefinition Id="ce999516-3bdc-4c80-aa2c-deb51ff0f7e0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="4c515291-3666-4d76-8f59-9247b4fe9c9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4afa7582-47b5-4b88-bd91-d133f3a22d3f" />
+          </association>
+          <association Id="3b464214-ef02-4249-8068-8e7ffe480e20" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="3d2b2c0e-a6df-4d3c-b1a8-6e60b2078ce4" LastKnownName="Relationship Types" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85c21107-9808-4b8b-8c21-b1cbabd2d6b8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5a364b7e-5c7e-4d99-822b-6dd1874426a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd8a8a8d-7149-4d25-a022-b2c23e3e92f7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60a236c4-a025-42bc-bec5-e2c6650fda13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7ea5128f-26fc-45df-b7c9-d82c66879480" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c5ce0001-6668-4b04-a2f5-d48b8e6937f9" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98fb68ab-31e4-46ab-b2a7-9a6ac1bd18ef" />
+          </property>
+          <property Id="be7ca3e3-a45e-4781-b19c-0357319d6998" name="Relationship To Patient" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="039b2b81-7ca2-4da6-8978-c22d00d996ff" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c5a44851-f284-4c7d-be82-bbad4f4eb664" name="Patient" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a6cb1e87-2735-4b87-ba5a-92188cbd8054" />
+        <targetEnds>
+          <association Id="6c2df322-18ef-458c-a014-8c75d5c98e93" isDerived="false" sourceEndRoleName="Patient" targetEndRoleName="Family Tree" isLeaf="false" isAbstract="false">
+            <classMoniker Id="19583c2b-62b3-4884-8fb8-dbd6e41ee8b3" LastKnownName="Family Tree" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="028c52fa-3885-4328-b295-c26248e8c09f" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="7965d56d-fa89-4a1e-9cc3-64c995fc1709" name="Lower" value="1">
+                      <elementDefinition Id="0d84fedf-fed2-47c7-9d82-3cd7009f3ad1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8be74dfd-91b6-42a0-9239-b1d0d86f9ecd" name="Upper" value="*">
+                      <elementDefinition Id="ef6c7b11-5048-42d6-9971-43acda425765" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="7a6db51c-fda7-4c5b-8123-c29e69a6e1db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59e29c01-33ec-43fc-8fd1-193b211817ec" name="Family Tree" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e79b36a3-f90b-4985-8ca7-4c03e8277b20" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ef3cf0e3-758f-480b-ab74-932c11be2f27" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3c892438-78db-4a56-800b-80e703b6d00d" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="279a3a48-7441-4254-b453-c519562ddc19" />
+          </property>
+          <property Id="190b9cc6-b850-4c5f-9b8b-3a61f44cccb7" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fde7c9df-c7f8-49c0-bb2e-7a6ac9cdf56b" />
+          </property>
+          <property Id="863f8aae-9f04-4f43-b655-6effce74d7d2" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9adf37db-a6ab-441c-906e-64656d09e642" />
+          </property>
+          <property Id="1c7122e1-08c3-476e-9ef9-73bd67d0b549" name="Patient Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dad7ccb5-84b3-4c87-ad1c-6a10c8e84500" />
+          </property>
+          <property Id="3d4fd682-26b5-4805-ba5f-a2806885259e" name="Phone Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="acae79bd-e124-4049-b464-2d2f698edd75" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c1c964d8-00d7-4df0-944d-2bda8e3fbd57" name="Patient Family Member" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="df7a17b3-716e-45dd-8d79-b4fb7663bb64" />
+        <ownedAttributesInternal>
+          <property Id="b36a4c4b-bc07-400b-b455-ef953bccff7a" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3efede46-197d-434e-adc6-82762fde5ae3" />
+          </property>
+          <property Id="07755b5f-5104-4372-b99a-ab1a6fcf11cd" name="Family Tree" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a32af386-37f9-44b0-a1b5-6956e5f2f9d8" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="3d2b2c0e-a6df-4d3c-b1a8-6e60b2078ce4" name="Relationship Types" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03b3eb4f-8dca-4009-bbbd-43db3adcab76" />
+        <targetEnds>
+          <association Id="90a3ce58-df07-4f73-ab47-156496254779" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="501fd756-cae5-4bcc-87a0-bc59438b7173" LastKnownName="Paternal/Maternal" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a371c962-9fb3-4ec4-9fe4-f5e8afa46ae8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e54ed2c6-be07-4082-b90a-b91b9a5879be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="47cf8ba6-c6a7-4316-9f41-5fd9a6157ea5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="962253cc-d4a3-4a42-8456-fa736e5f18c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="31d86ff2-8308-400c-83a7-d63fb64fc791" />
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral Id="8d3d54b1-b970-4aba-845e-c5620694ba51" name="Father">
+            <elementDefinition Id="5feaa01a-bef9-488b-b229-b2974df3a61e" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a585b479-fad2-4572-a89c-fb2e56d0a836" name="Brother">
+            <elementDefinition Id="9df7d771-c206-42ad-a329-ba94ada55bbb" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="aa89210b-4276-422a-8019-12300e79c2b9" name="Sister">
+            <elementDefinition Id="bd2b393e-d21b-41d6-8c49-445854cbed3c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="80bd1346-bdc1-467d-8119-b243d491673a" name="Mother">
+            <elementDefinition Id="84e99cc4-da6b-4ed1-8dfa-50d96e50e1f4" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="bd92883e-1670-4a2a-91cc-8e79c1ae23b1" name="Paternal/Maternal">
+            <elementDefinition Id="8a054853-d103-468e-a61b-8a1962ec50d2" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="3be81571-7309-4926-a38f-5ef9f3488323" name="Aunt">
+            <elementDefinition Id="aa762a70-2c15-44c6-9a6f-46cc079fd7f2" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="c3187295-97cd-49c7-b02f-246734dfd471" name="Uncle">
+            <elementDefinition Id="f4c5e108-0b28-4a63-9654-f91ce13395c9" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="5f9ed26e-b807-4cb2-901e-7395b5dc0ad4" name="Grandmother">
+            <elementDefinition Id="5955a53d-b7e0-45de-a45e-1ddd10bb726b" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="2a2b91ea-795d-4ad4-af7a-ed48e00b7725" name="Grandfather">
+            <elementDefinition Id="27bcb0cb-c700-4e75-bfbe-d5d67ceec763" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="501fd756-cae5-4bcc-87a0-bc59438b7173" name="Paternal/Maternal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c236d5b-db76-497e-bb76-81283e176ff3" />
+        <ownedLiterals>
+          <enumerationLiteral Id="6ced85ab-218e-4765-ace2-ff9a7c02efbf" name="Paternal">
+            <elementDefinition Id="8fb0b3ef-92d1-429f-8291-31e3ed79a1dd" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a16f6598-b40f-4e7c-9f6d-eadd81635806" name="Maternal">
+            <elementDefinition Id="0feaee05-102d-4a45-a76d-aa993490e75e" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="ab4d9bfd-b997-419b-aaf5-396330412ea2" name="NA">
+            <elementDefinition Id="bf720929-d4ca-470b-af3d-f3f264f1ada7" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="dc042da9-912d-434b-b4d7-a4a6493d33af" name="ToyshopReplication">
+    <elementDefinition Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd" />
+  </package>
+</logicalClassDesignerModel>

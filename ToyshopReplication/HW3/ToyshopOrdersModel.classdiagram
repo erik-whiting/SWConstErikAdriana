@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="25f98d69-55db-469c-b67e-1eaacebfc540" name="ToyshopOrdersModel" linkedPackageId="719da0ba-eb4f-42b7-92cd-428ad05b7fc5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6d4aae17-f309-41da-87da-eb2c24b8ef52">
+      <profileInstance Id="66ed2bc9-a4ce-47dd-9f26-ea38eb8532f9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="73d9d8a6-f7f8-44e3-bd9b-75b0587a687a">
+      <profileInstance Id="460496ff-7181-45f8-a355-e0f688410fd1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0d89af06-b371-430f-abec-61cd16c3c0c6" name="Order" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c00ccb2d-89ac-4b80-a4a7-1191932884f1" />
+        <targetEnds>
+          <association Id="2afd2c18-d891-414d-adae-814024ff0a97" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="Order Line Items" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b41a871e-0a52-4ba1-b067-cb3ed4657bef" LastKnownName="Order Line Items" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e0ea4ea-dde8-48ce-9850-1e7e1a1abeee" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="09989e32-e0d5-4904-9a45-09fb29a06c45" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2ba3e4e-6664-4033-a64f-3a140d948b23" name="Order Line Items" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="5bef34eb-72a0-48ca-aa9b-5ad84176a263" name="Lower" value="1">
+                      <elementDefinition Id="e7caa7a8-3b34-44e8-bbb2-455f418df52a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="25f7f6d7-008f-4538-a463-7e13ad0d5be4" name="Upper" value="*">
+                      <elementDefinition Id="82bfe3d7-8d40-4756-a392-7290226ae47a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f175b9fa-982d-4ff9-9617-728a1bb62a04" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="49a59817-18fe-4ae3-9c27-42f901c589ae" />
+          </association>
+          <association Id="9ac4733b-e635-4ea7-a46c-3882015f1f48" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Shipping Method" isAbstract="false">
+            <enumerationMoniker Id="7f07f731-c73d-464b-be49-469bd5f4bbd6" LastKnownName="Shipping Methods" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a3175517-55a5-4234-9901-5a77e51ce066" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="22ef79b4-008a-4a05-b430-246c73ed12a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ef70c77-0764-4a6c-bb96-1ffbe501eafb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="70933f43-bf92-4d3e-83f9-e0fe0c35d884" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea9addce-dfaa-423b-9a14-83de6fadeead" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="18600f2b-aad9-4726-80a9-37b8210be84b" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5af67f54-14c3-402b-be5e-89c04175cd70" />
+          </property>
+          <property Id="7c53d5e0-ba80-431a-bb3e-954283d5a5b9" name="Billing Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="111f4579-4d44-4f60-a6ab-90165e918c45" />
+          </property>
+          <property Id="a98fbbce-4a96-4cf5-8e11-fbd3d5943cda" name="Order Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc82841b-dd32-4acb-b165-f6e02d897cc6" />
+          </property>
+          <property Id="053027a1-eb07-4fa4-93b0-20671c2b611a" name="Ship Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a587109d-131e-4b78-92ff-80d713343d15" />
+          </property>
+          <property Id="7c08fc75-a562-49bc-86aa-dbcaf268ea44" name="Total Cost" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3e0be7e3-5708-4150-a3c1-07f277542e1f" />
+          </property>
+          <property Id="6853496f-bea6-4666-9a91-56110a24cc4d" name="Shipping Cost (Dolalrs)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="54e65b28-890f-4e76-bea1-1ee0ee045c5d" />
+          </property>
+          <property Id="5382ee81-e4f2-4f69-91a0-bfa5834553e6" name="Shipping Method" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aa9f2417-27a7-473a-9e82-e3d8c92f9860" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b41a871e-0a52-4ba1-b067-cb3ed4657bef" name="Order Line Items" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="31afdf2b-5c84-4e0d-b6e1-e24db969d74f" />
+        <ownedAttributesInternal>
+          <property Id="b5f0eaa8-ae3a-4e2c-a8f3-15263dcd36b2" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9ee74465-a2b5-41b7-85e6-2a7733119df1" />
+          </property>
+          <property Id="b5322865-e42b-435f-9dbc-3b47d14a6177" name="Quantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc9417a1-922d-4af0-b8b8-989db7bdafb8" />
+          </property>
+          <property Id="f70bbf6e-16b9-4b91-8961-a6633dfb52d5" name="SKU" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5063761d-8f02-4177-b683-685e7359f9c8" />
+          </property>
+          <property Id="423a003a-2bf2-4019-840a-7ac88563bacf" name="Toy" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="621896dd-e465-45e0-ad3e-6e5eefdae338" />
+          </property>
+          <property Id="032801d0-ca06-4778-8030-b083389c4a3c" name="Item Weight (in pounds)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8bdd334a-2657-4628-bd25-a6da83983ee5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="7f07f731-c73d-464b-be49-469bd5f4bbd6" name="Shipping Methods" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="208e3554-e83b-42d8-8ea8-9087a7ca577e" />
+        <ownedLiterals>
+          <enumerationLiteral Id="f13b23a8-f30a-430f-a593-8bd8dd2bdc0a" name="Ground">
+            <elementDefinition Id="f068a44b-b3a2-41c8-b49f-8f63a54018be" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="e9cfc466-2906-416e-869f-0fc79fe98bcb" name="Overnight">
+            <elementDefinition Id="b7a35166-4564-472d-a939-c53f32f94dc9" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="75a9eb41-a3e1-4b9a-96a4-3c07a5175e29" name="2 Day Delivery">
+            <elementDefinition Id="05962f92-ce1d-4a94-8729-e47043c6cce9" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="719da0ba-eb4f-42b7-92cd-428ad05b7fc5" name="ToyshopReplication">
+    <elementDefinition Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd" />
+  </package>
+</logicalClassDesignerModel>

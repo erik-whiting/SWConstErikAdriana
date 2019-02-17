@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="69ddf88f-4522-4859-9c2d-321f20a03199" name="BrowseToys" linkedPackageId="ce1c9e07-e4fc-4db0-b245-1a66b08ee75e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3f79b4d1-3830-48eb-915f-05494f79b75e">
+      <profileInstance Id="10229e13-cb22-4bc8-99ec-428972b74fb2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d5aac80d-1119-4776-aea8-0f99f070d227">
+      <profileInstance Id="d56202ce-f878-4442-ac2a-4c2389d15aca" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="2c13acaa-81b1-4d18-b75c-3dd4ce409196" name="BrowseToys" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="3faa4768-5293-498d-bd15-ab921f786864" />
+        <nodes>
+          <initialNode Id="5c08b55d-4217-4cc3-b32b-6a739f1a089d" name="Initial1" isLeaf="false">
+            <elementDefinition Id="f40261f8-14af-457e-b2c9-c9167f1d1643" />
+            <flowNodeTargets>
+              <controlFlow Id="4762515b-7ca1-47a1-91e3-ff247f1f86fd" isLeaf="false">
+                <opaqueActionMoniker Id="2693a3d4-abf0-4154-9ce8-843537973d6e" LastKnownName="Choose a Category" />
+                <elementDefinition Id="05b1fdb2-8325-4eda-8f2b-799fef62b16d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="2693a3d4-abf0-4154-9ce8-843537973d6e" name="Choose a Category" isLeaf="false">
+            <elementDefinition Id="586c5399-7e19-42a6-bd6b-1d8fc2837382" />
+            <flowNodeTargets>
+              <controlFlow Id="0a15d88f-61e9-4b43-8d4a-53419738790e" isLeaf="false">
+                <opaqueActionMoniker Id="33d663ac-026e-49c3-8e2f-2f19b8b69545" LastKnownName="View Toy Details" />
+                <elementDefinition Id="9db6735e-3dfc-4ebe-bb9f-5778de106dcd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="33d663ac-026e-49c3-8e2f-2f19b8b69545" name="View Toy Details" isLeaf="false">
+            <elementDefinition Id="4f11a2b1-b910-4d95-88bb-83e5a7e85b6d" />
+            <flowNodeTargets>
+              <controlFlow Id="e428b7ce-c65a-4b56-8bf2-d7969b2c0cc7" isLeaf="false">
+                <opaqueActionMoniker Id="690ca96f-a140-4092-9135-68d5a20b1e55" LastKnownName="Add Toy to Shopping Cart" />
+                <elementDefinition Id="8698cf8f-73cd-40f4-b7b1-26e5a002eed0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="690ca96f-a140-4092-9135-68d5a20b1e55" name="Add Toy to Shopping Cart" isLeaf="false">
+            <elementDefinition Id="1f68d53f-f801-429e-a52c-e8e3c8d03f75" />
+            <flowNodeTargets>
+              <controlFlow Id="552256f1-c268-45f1-84e1-8962e3409012" isLeaf="false">
+                <decisionNodeMoniker Id="4a16c58c-87b9-4c4d-9cd8-403da67feb88" LastKnownName="Decision1" />
+                <elementDefinition Id="cc132eff-a7a8-4ada-9f9c-bfe8f00b8ba3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="67ef5799-2eee-4036-b2fc-035f72ed0100" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="8050fffc-b377-4289-b9ce-41ec04c33568" />
+          </activityFinalNode>
+          <decisionNode Id="4a16c58c-87b9-4c4d-9cd8-403da67feb88" name="Decision1" isLeaf="false">
+            <elementDefinition Id="079a1d30-862a-4bce-bb88-088dff0beb5d" />
+            <flowNodeTargets>
+              <controlFlow Id="95c0d092-28e2-4eec-a760-883183f0e08e" guard="Shop for More Toys" isLeaf="false">
+                <opaqueActionMoniker Id="2693a3d4-abf0-4154-9ce8-843537973d6e" LastKnownName="Choose a Category" />
+                <elementDefinition Id="c524caac-9dfe-4c8b-b81b-93e23b450177" />
+              </controlFlow>
+              <controlFlow Id="d5aba1d3-ec2c-4e3a-8055-e4e985221292" guard="Done Shopping" isLeaf="false">
+                <callBehaviorActionMoniker Id="0ca1d4c8-2856-4e9b-9ca3-991a8ae2d696" LastKnownName="Checkout" />
+                <elementDefinition Id="416924b3-a899-4128-b23a-822f4c6847c5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <callBehaviorAction Id="0ca1d4c8-2856-4e9b-9ca3-991a8ae2d696" name="Checkout" isLeaf="false">
+            <elementDefinition Id="0977748b-4871-4679-b96d-0e2aec17acff" />
+            <flowNodeTargets>
+              <controlFlow Id="5e14d5e5-8871-4dfd-8656-6bbe1aa092b0" isLeaf="false">
+                <activityFinalNodeMoniker Id="67ef5799-2eee-4036-b2fc-035f72ed0100" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="bb7216b3-ea37-496e-bd50-e8c95f132c0c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ce1c9e07-e4fc-4db0-b245-1a66b08ee75e" name="ToyshopReplication">
+    <elementDefinition Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd" />
+  </package>
+</activityRootModel>
