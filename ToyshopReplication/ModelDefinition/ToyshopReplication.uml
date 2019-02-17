@@ -61,16 +61,6 @@ Manage Inventory</body>
       </annotatedElements>
     </comment>
     <comment
-      Id="6afde6d9-1ab7-409b-830d-f98d58cf04a2">
-      <body>Family member's personal data will be inherited from the "Patient" table since these entities will also be patients</body>
-      <annotatedElements>
-        <classMoniker
-          Id="df7a17b3-716e-45dd-8d79-b4fb7663bb64"
-          LastKnownName="Patient Family Member"
-          LastKnownLocation="ToyshopReplication.uml" />
-      </annotatedElements>
-    </comment>
-    <comment
       Id="d01acba8-c519-4be4-92bf-c2efd47c79a0">
       <body>Disclosure Types are TBD</body>
       <annotatedElements>
@@ -1177,7 +1167,7 @@ Manage Inventory</body>
             isAbstract="false">
             <classMoniker
               Id="b69cf20d-85cd-4e3c-b30f-39318610985c"
-              LastKnownName="Family Members"
+              LastKnownName="Family Member"
               LastKnownLocation="ToyshopReplication.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -1264,7 +1254,7 @@ Manage Inventory</body>
     <packageHasNamedElement>
       <class
         Id="b69cf20d-85cd-4e3c-b30f-39318610985c"
-        name="Family Members"
+        name="Family Member"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2247,6 +2237,59 @@ Manage Inventory</body>
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a7afde68-dac3-4864-9734-8fff75da0b14"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Family Member"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b69cf20d-85cd-4e3c-b30f-39318610985c"
+              LastKnownName="Family Member"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5371ba26-d71f-430f-9994-5108e613b59e"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4bc92e48-4370-4b67-b7c9-8c794957dd61"
+                  name="Family Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="12df640a-c9d2-45da-a108-473c8b058350"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2687b69d-15fe-41d5-88ef-0e9d82d7113c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
