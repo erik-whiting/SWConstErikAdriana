@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="4e877b0f-ad1e-4218-b025-4e984b321866" name="AlertPotentialDonor" linkedPackageId="fad6895a-6fee-4b9e-a6c5-3408e750bf11" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="2a61f7f2-09b8-4e28-8bbb-82eb38cbe575">
+      <profileInstance Id="00090832-4da4-4d71-82d9-56bbcc33459b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="aa2b27fd-7c7d-4a88-a376-d73f685fd0d5">
+      <profileInstance Id="735c5e1f-40ba-40ea-ad55-0b9b4f9b7af3" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="332ac7e2-a3c1-4718-89f3-a5edecde2e8a" name="AlertPotentialDonor" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="4fb9bfe5-b340-4fa1-87c7-bd7ba05aa60c" />
+        <nodes>
+          <initialNode Id="41b99500-d6b1-4974-90ae-5ffd1cd4df3f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="78860531-1258-4675-ad08-fe21e8cf3fbf" />
+            <objectFlowTargets>
+              <objectFlow Id="30ebd8e2-e93d-4496-bd2d-b9fb9c7d54f6" guard="Parse request object" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="e530011e-5b5c-4cdc-bdf7-c7e1d1266b4a" LastKnownName="Donation Request Data" />
+                <elementDefinition Id="c37113cb-bce7-4e40-8ae0-ecc98e5fe7a7" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <opaqueAction Id="7f47720d-b547-43d7-bda4-bb0d9fc4531b" name="Scrub privacy data" isLeaf="false">
+            <elementDefinition Id="a461c2bc-c958-44ce-a0a9-b2b4bd2a15a6" />
+            <flowNodeTargets>
+              <controlFlow Id="d3965f79-b983-432d-b5cb-a1d56db34a5e" isLeaf="false">
+                <opaqueActionMoniker Id="a4dbe974-0192-4429-b000-d4f32fd500c5" LastKnownName="Build email" />
+                <elementDefinition Id="955eb064-e692-4293-ab51-f349017e1d7a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="e530011e-5b5c-4cdc-bdf7-c7e1d1266b4a" name="Donation Request Data" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="192b3a2a-8a25-48c3-b5d9-071cb34ea6d9" />
+            <objectFlowTargets>
+              <objectFlow Id="3ae86abc-5565-4f73-8cd4-ad4338c50378" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="7f47720d-b547-43d7-bda4-bb0d9fc4531b" LastKnownName="Scrub privacy data" />
+                <elementDefinition Id="f863a824-79ec-408f-add7-f99cb296827d" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="1a7e9c9f-9ae0-4086-8465-d0f501e19d4e" name="2147483647" value="2147483647">
+                <elementDefinition Id="d2129679-36c4-4b04-ab1c-a2342bd664f2" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="a4dbe974-0192-4429-b000-d4f32fd500c5" name="Build email" isLeaf="false">
+            <elementDefinition Id="8fcb19e8-37ed-40b9-b960-dfcc5d7aad9d" />
+            <flowNodeTargets>
+              <controlFlow Id="98ef9cef-80cd-4962-ab97-349a0ec92350" isLeaf="false">
+                <forkNodeMoniker Id="21247031-b404-4821-b7d0-7dc6336fdf37" LastKnownName="Fork1" />
+                <elementDefinition Id="b4077061-e58f-4656-9ec0-d3d2237ff559" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5f478ac9-9e9d-4326-88b6-81d828b90454" name="Alert Medical personnel of donor notification" isLeaf="false">
+            <elementDefinition Id="0c0446cf-6a86-42c0-951f-3c4d9fc2d998" />
+            <flowNodeTargets>
+              <controlFlow Id="bbbe2f53-1479-4f7b-9374-2ad795670824" isLeaf="false">
+                <joinNodeMoniker Id="1ad17bc4-1837-4758-af27-235bbe107528" LastKnownName="Join2" />
+                <elementDefinition Id="d884f9cc-87cb-4dec-9071-c17dd784e3ba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e10c55f8-9f47-441c-9aa0-da70bd97ed57" name="Send email to potential donor" isLeaf="false">
+            <elementDefinition Id="9210118f-9c1f-4811-93bc-9bdb6d360ae2" />
+            <flowNodeTargets>
+              <controlFlow Id="ef7e8e1e-a873-4390-86e7-6ad7b0ce5ac5" isLeaf="false">
+                <joinNodeMoniker Id="1ad17bc4-1837-4758-af27-235bbe107528" LastKnownName="Join2" />
+                <elementDefinition Id="69b8e588-b4a1-492e-9ca1-d94783f07073" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="1ad17bc4-1837-4758-af27-235bbe107528" name="Join2" isLeaf="false">
+            <elementDefinition Id="d309035e-162e-4739-8ff2-798d4f7440c7" />
+            <flowNodeTargets>
+              <controlFlow Id="a8cc20e8-f194-419b-a808-4ee09bde737c" isLeaf="false">
+                <activityFinalNodeMoniker Id="a63ed49e-59f1-411c-8e46-74427d3eb92a" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="cefb09c3-c54b-40c1-8738-271c5075ae38" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <forkNode Id="21247031-b404-4821-b7d0-7dc6336fdf37" name="Fork1" isLeaf="false">
+            <elementDefinition Id="cbb01d31-5ce6-4663-a954-29541e0596df" />
+            <flowNodeTargets>
+              <controlFlow Id="1879219b-2b9d-4c35-bada-57f190c23c5f" isLeaf="false">
+                <opaqueActionMoniker Id="5f478ac9-9e9d-4326-88b6-81d828b90454" LastKnownName="Alert Medical personnel of donor notification" />
+                <elementDefinition Id="915f2665-c2c1-4c62-9343-e06b1774f78e" />
+              </controlFlow>
+              <controlFlow Id="0d2a9787-1f68-4f6d-b443-0badee9824fc" isLeaf="false">
+                <opaqueActionMoniker Id="e10c55f8-9f47-441c-9aa0-da70bd97ed57" LastKnownName="Send email to potential donor" />
+                <elementDefinition Id="8b7ff93d-db52-4538-af4a-ad8d9f7d3c51" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <activityFinalNode Id="a63ed49e-59f1-411c-8e46-74427d3eb92a" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="8b280b17-3195-4eb9-8895-26525ec66c64" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="fad6895a-6fee-4b9e-a6c5-3408e750bf11" name="ToyshopReplication">
+    <elementDefinition Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd" />
+  </package>
+</activityRootModel>

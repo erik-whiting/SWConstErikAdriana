@@ -85,12 +85,33 @@
       <SubType>Content</SubType>
       <DependentUpon>HW4\AddFamilyMember.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="HW4\AlertPotentialDonor.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW4\AlertPotentialDonor.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW4\AlertPotentialDonor.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="HW4\AlertProspectToSignUp.activitydiagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="HW4\AlertProspectToSignUp.activitydiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>HW4\AlertProspectToSignUp.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="HW4\SearchForDonor.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW4\SearchForDonor.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW4\SearchForDonor.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="HW4\SystemSearchForDonor.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW4\SystemSearchForDonor.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW4\SystemSearchForDonor.activitydiagram</DependentUpon>
     </Content>
     <Content Include="Woodshop Brainstorm.usecasediagram">
       <SubType>Content</SubType>
