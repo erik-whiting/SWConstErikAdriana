@@ -72,6 +72,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="7ea5128f-26fc-45df-b7c9-d82c66879480" />
           </association>
+          <association Id="a52f38ed-f10d-42bb-935c-128e3ab026a7" isDerived="false" sourceEndRoleName="Family Member" targetEndRoleName="Patient" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a83ab467-7464-483b-8209-011cedd504ba" LastKnownName="Patient" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5312a92-ef7c-496c-8830-091fe9dc7e55" name="Family Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="67ca6537-b591-4f63-8bd8-fff386d382db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b3c2331-acd1-4d17-b324-9f9ac6efa367" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5f82c2be-55be-4457-8c94-31e0878781f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="88d30aca-f823-46a6-ad64-15def3e9eb99" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="c5ce0001-6668-4b04-a2f5-d48b8e6937f9" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -154,34 +170,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="a83ab467-7464-483b-8209-011cedd504ba" name="Patient" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5fd2ef99-8b28-4d95-9bc0-5819e4f4266d" />
-        <targetEnds>
-          <association Id="3e8697ea-3fa1-4694-b678-e635fa4c5579" isDerived="false" sourceEndRoleName="Patient" targetEndRoleName="Family Member" isLeaf="false" isAbstract="false">
-            <classMoniker Id="e4426d8d-af64-4ca2-892b-f3eff6a159d5" LastKnownName="Family Member" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="573aade8-6315-4db6-9c9f-519cba662e77" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5371ba26-d71f-430f-9994-5108e613b59e" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="0a9aea4e-adbe-4555-8e6f-e88896589beb" name="Family Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="6e63d5ce-36af-4f67-abc0-16e2bf6b53ba" name="Lower" value="*">
-                      <elementDefinition Id="12df640a-c9d2-45da-a108-473c8b058350" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="9ec026c1-99f0-4223-a5f6-a4670086228f" name="Upper" value="*">
-                      <elementDefinition Id="2687b69d-15fe-41d5-88ef-0e9d82d7113c" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="4bc92e48-4370-4b67-b7c9-8c794957dd61" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="a7afde68-dac3-4864-9734-8fff75da0b14" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="9be547f6-afa1-4045-bb34-7912ae2ed1fa" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c84f8a8c-4880-4d22-bf6f-2469c3d696a4" />

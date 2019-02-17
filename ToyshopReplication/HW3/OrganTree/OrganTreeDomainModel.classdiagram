@@ -163,12 +163,30 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="8131ae32-fb9b-43e3-9721-f2513840c1db" name="Potential Donor" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2456beb7-33ce-4e3a-84a9-f00ae3ac374d" />
-        <suppliersInternal>
-          <dependency Id="7d981e56-daa8-4e33-b71e-8484aa6f315d">
+        <generalsInternal>
+          <generalization Id="56d99c88-73cb-4984-813e-b796f160bae4" isSubstitutable="false">
             <classMoniker Id="e2964a3b-7af9-44ac-8316-8b6e97c9a191" LastKnownName="Patient" />
-            <elementDefinition Id="1b2ff643-400a-4ae2-9867-7a223c76e3e5" />
-          </dependency>
-        </suppliersInternal>
+            <elementDefinition Id="d94c3d4e-7494-4cf2-adb8-09951d12db10" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="590d5bf8-f168-413e-ab54-a299c3f30ea2" isDerived="false" sourceEndRoleName="Potential Donor" targetEndRoleName="Potential match" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b53c1b68-79ed-4613-a6d0-88732a398609" LastKnownName="Potential match" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d651b8c-62a8-440e-853e-417ec1d14433" name="Potential Donor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="98020d6b-61cf-4552-936a-a49af461b72a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c9525f90-a7b5-49c1-920f-7e6c4c958a4f" name="Potential match" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f609f39c-2fa8-4651-a616-5da66a79beb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="32f2553c-0cd1-422b-baf8-9ea54fd34da5" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="da0b3837-f939-4f3b-9429-f6bea89cae9c" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ec8e03ed-2a49-4353-aa58-59002a8d73d1" />
@@ -188,12 +206,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="b60c664f-4027-479e-ba6e-9c05cfa66073" name="Recipient" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1e5bad90-1f6e-4dbe-abfb-8d347626acbe" />
-        <suppliersInternal>
-          <dependency Id="03e385e9-767f-409e-a429-d0925d0fcf3a">
+        <generalsInternal>
+          <generalization Id="e7baf587-ad45-4dc6-8f36-cb69db206c1b" isSubstitutable="false">
             <classMoniker Id="e2964a3b-7af9-44ac-8316-8b6e97c9a191" LastKnownName="Patient" />
-            <elementDefinition Id="5550ed89-0075-4f77-b242-a1734b18121b" />
-          </dependency>
-        </suppliersInternal>
+            <elementDefinition Id="7042f76e-ddd6-442e-9c7d-34c3f8df2639" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="e066064d-1878-48cf-837e-f97b2b741079" isDerived="false" sourceEndRoleName="Recipient" targetEndRoleName="Donation Needed" isLeaf="false" isAbstract="false">
             <classMoniker Id="0d80b894-e217-494e-b3d1-d56ccaa31154" LastKnownName="Donation Needed" />
@@ -300,7 +318,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="bdb24882-5939-43d5-9e4f-7dc6f7200f40" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="bdb24882-5939-43d5-9e4f-7dc6f7200f40" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="826aaa10-d003-46d0-a675-48774edd1d1a" />
                 </memberEnd>
               </associationHasOwnedEnds>
