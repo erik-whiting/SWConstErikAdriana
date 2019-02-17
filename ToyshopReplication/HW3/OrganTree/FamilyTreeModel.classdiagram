@@ -9,20 +9,6 @@
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="a1719348-9a13-48cf-a374-3ee831dac5ac">
-      <profileInstance Id="3ac1138e-fb22-4d91-be7a-91bee5a2f7d4" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="79f40473-45ae-4dff-ae5c-a540d8e3d94a">
-      <profileInstance Id="1453cc2e-eb75-4cd7-8b42-04304bd3a2e5" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="19583c2b-62b3-4884-8fb8-dbd6e41ee8b3" name="Family Tree" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -133,56 +119,6 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c5a44851-f284-4c7d-be82-bbad4f4eb664" name="Patient" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="a6cb1e87-2735-4b87-ba5a-92188cbd8054" />
-        <targetEnds>
-          <association Id="6c2df322-18ef-458c-a014-8c75d5c98e93" isDerived="false" sourceEndRoleName="Patient" targetEndRoleName="Family Tree" isLeaf="false" isAbstract="false">
-            <classMoniker Id="19583c2b-62b3-4884-8fb8-dbd6e41ee8b3" LastKnownName="Family Tree" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="028c52fa-3885-4328-b295-c26248e8c09f" name="Patient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="7965d56d-fa89-4a1e-9cc3-64c995fc1709" name="Lower" value="1">
-                      <elementDefinition Id="0d84fedf-fed2-47c7-9d82-3cd7009f3ad1" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="8be74dfd-91b6-42a0-9239-b1d0d86f9ecd" name="Upper" value="*">
-                      <elementDefinition Id="ef6c7b11-5048-42d6-9971-43acda425765" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="7a6db51c-fda7-4c5b-8123-c29e69a6e1db" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="59e29c01-33ec-43fc-8fd1-193b211817ec" name="Family Tree" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="e79b36a3-f90b-4985-8ca7-4c03e8277b20" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="ef3cf0e3-758f-480b-ab74-932c11be2f27" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="3c892438-78db-4a56-800b-80e703b6d00d" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="279a3a48-7441-4254-b453-c519562ddc19" />
-          </property>
-          <property Id="190b9cc6-b850-4c5f-9b8b-3a61f44cccb7" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="fde7c9df-c7f8-49c0-bb2e-7a6ac9cdf56b" />
-          </property>
-          <property Id="863f8aae-9f04-4f43-b655-6effce74d7d2" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9adf37db-a6ab-441c-906e-64656d09e642" />
-          </property>
-          <property Id="1c7122e1-08c3-476e-9ef9-73bd67d0b549" name="Patient Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="dad7ccb5-84b3-4c87-ad1c-6a10c8e84500" />
-          </property>
-          <property Id="3d4fd682-26b5-4805-ba5f-a2806885259e" name="Phone Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="acae79bd-e124-4049-b464-2d2f698edd75" />
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="c1c964d8-00d7-4df0-944d-2bda8e3fbd57" name="Patient Family Member" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="df7a17b3-716e-45dd-8d79-b4fb7663bb64" />
         <ownedAttributesInternal>
@@ -263,8 +199,41 @@
         </ownedLiterals>
       </enumeration>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a83ab467-7464-483b-8209-011cedd504ba" name="Patient" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5fd2ef99-8b28-4d95-9bc0-5819e4f4266d" />
+        <ownedAttributesInternal>
+          <property Id="9be547f6-afa1-4045-bb34-7912ae2ed1fa" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c84f8a8c-4880-4d22-bf6f-2469c3d696a4" />
+          </property>
+          <property Id="1e443f29-4c7f-48b6-8a7d-dd62edac7f06" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f6d12ac8-f930-4694-9df5-e175f49cc026" />
+          </property>
+          <property Id="7581a575-7f61-4a96-8f89-c4ba18940ced" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4737b88-a970-451e-b9cb-6cc62e9dcdf8" />
+          </property>
+          <property Id="de82a664-b7d2-4f0f-a823-b3e805483b37" name="Phone Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="597f2284-09cf-410f-ac34-ada7488e8da5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="dc042da9-912d-434b-b4d7-a4a6493d33af" name="ToyshopReplication">
     <elementDefinition Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a1719348-9a13-48cf-a374-3ee831dac5ac">
+        <profileInstance Id="3ac1138e-fb22-4d91-be7a-91bee5a2f7d4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="79f40473-45ae-4dff-ae5c-a540d8e3d94a">
+        <profileInstance Id="1453cc2e-eb75-4cd7-8b42-04304bd3a2e5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

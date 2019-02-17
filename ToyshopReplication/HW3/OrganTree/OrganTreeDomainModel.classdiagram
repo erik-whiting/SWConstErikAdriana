@@ -58,11 +58,36 @@
             <elementDefinition Id="e75f2ac6-54cf-4127-8a89-d77faee777f1" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2c2012dc-bfd6-4df9-8621-f4a318eb5c7c" name="Document Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e8ec834e-c730-4084-a69b-6f77e9bbcf25" />
+          </property>
+          <property Id="73e78105-a6d9-489f-bb35-3b9f30587e18" name="Date Completed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="32950e92-5e3f-42a6-aff0-385171491d18" />
+          </property>
+          <property Id="398db539-804a-4121-ba81-fde69714de1e" name="Date Added" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15272047-ec13-4f44-a83c-ca360ddfd795" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="0d80b894-e217-494e-b3d1-d56ccaa31154" name="Donation Needed" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b02f6100-933f-47eb-a6f6-0454099282f4" />
+        <ownedAttributesInternal>
+          <property Id="b751b913-be95-41dd-92cc-2653847bd6c1" name="Blood" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="355c1685-7684-48f7-bf91-7a7b8ae293ca" />
+          </property>
+          <property Id="486bdbba-afe2-4292-9e05-432f0b06683b" name="Organ" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f3a6c435-4516-40bd-b005-afb15a64094b" />
+          </property>
+          <property Id="5563c9dd-4e66-4d6b-adb0-50af8ab7ec96" name="Date Needed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c0c99e66-79ab-4511-9df2-f15bb248f7c3" />
+          </property>
+          <property Id="c872d5b8-1844-40b4-97d1-ab012e2254ba" name="Urgency" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cf59b9ce-b134-4e95-b694-5673830af337" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -91,6 +116,11 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="b53c1b68-79ed-4613-a6d0-88732a398609" name="Potential match" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2082cfd3-8b7e-4851-8ed4-d356e1d6b407" />
+        <ownedAttributesInternal>
+          <property Id="a5b09284-cc69-4070-b66f-81ef83e70b86" name="Percent Match" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="505f033b-ed0b-42d7-844b-1ecf9069e2de" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -114,6 +144,20 @@
             <elementDefinition Id="4d2f4076-e680-47ad-a865-8e42aefde9c2" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3075966b-3b11-406f-9d3c-9c8f5c706811" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c84f8a8c-4880-4d22-bf6f-2469c3d696a4" />
+          </property>
+          <property Id="83994afa-1e97-4011-9cf7-c8898d4b3330" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f6d12ac8-f930-4694-9df5-e175f49cc026" />
+          </property>
+          <property Id="7f507376-a508-419e-94ba-f1bfa46450df" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4737b88-a970-451e-b9cb-6cc62e9dcdf8" />
+          </property>
+          <property Id="b0cbc93b-e336-47ad-99c1-abc767c6c674" name="Phone Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="597f2284-09cf-410f-ac34-ada7488e8da5" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -125,6 +169,20 @@
             <elementDefinition Id="1b2ff643-400a-4ae2-9867-7a223c76e3e5" />
           </dependency>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="da0b3837-f939-4f3b-9429-f6bea89cae9c" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ec8e03ed-2a49-4353-aa58-59002a8d73d1" />
+          </property>
+          <property Id="8d406af7-27e4-4178-8a5b-c4316e778df0" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="172da3ff-3973-4a65-bbee-bead5936b8e9" />
+          </property>
+          <property Id="723c9c82-d7a3-4abc-acca-a413997e2675" name="Phone Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f1ce3ea8-4575-4f61-bd82-c3a4398766ce" />
+          </property>
+          <property Id="8f54627d-55cd-46f6-a4a3-a0a687288298" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d828d25a-81c3-40af-b16d-c45f65960c9f" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -164,6 +222,20 @@
             <elementDefinition Id="df388da5-7643-4fde-a061-51480ebf7671" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="1804b567-3c03-4a03-acb2-1540cf9fb5bb" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0cd1a285-0806-47b3-b680-9e45e7b48031" />
+          </property>
+          <property Id="d1c9950e-eb8a-407f-86e0-a8bc4543895c" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdffc8a1-6b77-4d99-ba2a-2605f7fac344" />
+          </property>
+          <property Id="ecba92e3-e0d9-41d2-8430-c775241d928f" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="75be771a-cbe4-4db5-90b2-2992f73884ba" />
+          </property>
+          <property Id="91dec33d-c7f3-437a-b4c8-6101efae9310" name="Phone Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8b73fd6a-15b2-4f41-9bbb-adca16b2c4e4" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
