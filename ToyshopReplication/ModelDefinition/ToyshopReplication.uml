@@ -2356,6 +2356,485 @@ Manage Inventory</body>
         </ownedLiterals>
       </enumeration>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7cf6e552-ed3c-4813-a25c-211a6e7c8c86"
+        name="Medical Record"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="190e6a4d-1af3-4010-b991-daf784cf0063"
+            isDerived="false"
+            sourceEndRoleName="Medical Record"
+            targetEndRoleName="Donation Needed"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b02f6100-933f-47eb-a6f6-0454099282f4"
+              LastKnownName="Donation Needed"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f895aadd-55d8-4479-b120-15bd9b151184"
+                  name="Medical Record"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="400ae27c-b5a8-4c89-9b6e-672a76ed29ac"
+                  name="Donation Needed"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cf57d36f-4f86-4fac-b357-fce56b6391e4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="69ccda70-c129-45e8-9b11-a31da2da0655"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e75f2ac6-54cf-4127-8a89-d77faee777f1"
+            isDerived="false"
+            sourceEndRoleName="Medical Record"
+            targetEndRoleName="Potential match"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2082cfd3-8b7e-4851-8ed4-d356e1d6b407"
+              LastKnownName="Potential match"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d740a193-2f9c-4a5f-95f0-f35493fc36b2"
+                  name="Medical Record"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff1834b0-c3b6-498d-b723-3d93695c1d8d"
+                  name="Potential match"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="15aa72a0-442b-4577-afe9-44047ec82a48"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9a21e11d-83a1-45de-86de-202493f343eb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b02f6100-933f-47eb-a6f6-0454099282f4"
+        name="Donation Needed"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bb61818c-eb92-4dd5-9d3c-be5571adf4b0"
+        name="Medical Personnel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f8c3baff-5608-48d8-9df2-102af6a421e7"
+            isDerived="false"
+            sourceEndRoleName="Medical Personnel"
+            targetEndRoleName="Patient"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5fd2ef99-8b28-4d95-9bc0-5819e4f4266d"
+              LastKnownName="Patient"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="792bc622-272d-403d-a710-9b0e60940800"
+                  name="Medical Personnel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0044e81-de8b-4726-a64e-7dcb6643f116"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2082cfd3-8b7e-4851-8ed4-d356e1d6b407"
+        name="Potential match"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5fd2ef99-8b28-4d95-9bc0-5819e4f4266d"
+        name="Patient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4d2f4076-e680-47ad-a865-8e42aefde9c2"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Medical Record"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7cf6e552-ed3c-4813-a25c-211a6e7c8c86"
+              LastKnownName="Medical Record"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21171aad-cf66-464e-b53b-d09a004b79ff"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="160fb375-b1de-4e4b-a1a2-67f12424bab5"
+                  name="Medical Record"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2456beb7-33ce-4e3a-84a9-f00ae3ac374d"
+        name="Potential Donor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1b2ff643-400a-4ae2-9867-7a223c76e3e5">
+            <classMoniker
+              Id="5fd2ef99-8b28-4d95-9bc0-5819e4f4266d"
+              LastKnownName="Patient"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1e5bad90-1f6e-4dbe-abfb-8d347626acbe"
+        name="Recipient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5550ed89-0075-4f77-b242-a1734b18121b">
+            <classMoniker
+              Id="5fd2ef99-8b28-4d95-9bc0-5819e4f4266d"
+              LastKnownName="Patient"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="df388da5-7643-4fde-a061-51480ebf7671"
+            isDerived="false"
+            sourceEndRoleName="Recipient"
+            targetEndRoleName="Donation Needed"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b02f6100-933f-47eb-a6f6-0454099282f4"
+              LastKnownName="Donation Needed"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab0c0752-9c79-4aa2-b9b7-c00f465034c4"
+                  name="Recipient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="faa34b96-f0b0-4ecf-8e34-3ec87e953aa2"
+                  name="Donation Needed"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9c4ddfc8-08f2-466b-aa00-7ffa3eb4b814"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="86729d34-185f-4967-a074-7f8114eb19b6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="127f1373-8295-4eec-be24-1cebd1190ede"
+        name="Family Tree"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4894d9ec-c46f-45cf-ae15-9dfea01e8d79"
+            isDerived="false"
+            sourceEndRoleName="Family Tree"
+            targetEndRoleName="Family Member"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1a614dc0-2214-4868-91ae-ec806949b6df"
+              LastKnownName="Family Member"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca43bcce-1eeb-44c0-8297-e832eeabf69b"
+                  name="Family Tree"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab488062-3d8c-49a9-a96d-17cf771dd689"
+                  name="Family Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d8d8a5c9-f7fb-4824-aaaf-c1067b2db04b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ff9eaddc-12b0-4c5d-a029-b2aebb901955"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1332783b-994c-4ec1-81ce-3958a9fac957"
+            isDerived="false"
+            sourceEndRoleName="Family Tree"
+            targetEndRoleName="Recipient"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1e5bad90-1f6e-4dbe-abfb-8d347626acbe"
+              LastKnownName="Recipient"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1fe7563-78cf-4a36-a506-19ad01e70fd5"
+                  name="Family Tree"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d173bc3-700c-4972-aed3-2b671d8aecec"
+                  name="Recipient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1a614dc0-2214-4868-91ae-ec806949b6df"
+        name="Family Member"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b82fa942-f96b-4f8f-94ca-ef8f4584ce48"
+            isDerived="false"
+            sourceEndRoleName="Family Member"
+            targetEndRoleName="Patient"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5fd2ef99-8b28-4d95-9bc0-5819e4f4266d"
+              LastKnownName="Patient"
+              LastKnownLocation="ToyshopReplication.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e9d9b272-9b3b-4d50-b44b-dbad78940a7a"
+                  name="Family Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="826aaa10-d003-46d0-a675-48774edd1d1a"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
