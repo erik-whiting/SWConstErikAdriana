@@ -2753,6 +2753,334 @@ Manage Inventory</body>
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="1eb27f88-5cd0-4a24-8b86-e39aa287bee7"
+        name="AddFamilyMember"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="94476f89-a0d6-4d8a-a56a-ea84aef818c2"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9c945577-868e-4dff-9338-3bffe120d788"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="97758dd2-d42a-4245-b709-caf0edbb1020"
+                  LastKnownName="Click &quot;Add Family Member&quot;"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="97758dd2-d42a-4245-b709-caf0edbb1020"
+            name="Click &quot;Add Family Member&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0a18cd46-ce82-4769-a56a-59114c8bf6f5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d8afcc3a-027c-4572-9821-9d6e9565b2ef"
+                  LastKnownName="Add Family Member Information"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d8afcc3a-027c-4572-9821-9d6e9565b2ef"
+            name="Add Family Member Information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="016013bb-febd-45e5-96f2-8d8634590a3f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="08abc1ce-2db3-438e-80e7-88bf9158da05"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="08abc1ce-2db3-438e-80e7-88bf9158da05"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f3ca71a9-14f7-4456-8fcb-6350ef9ee901"
+                guard="Add another family member"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="97758dd2-d42a-4245-b709-caf0edbb1020"
+                  LastKnownName="Click &quot;Add Family Member&quot;"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e3485d16-4933-482c-b6ba-079d42885fee"
+                guard="Done Adding"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="70b2b67b-bea4-4638-8444-acede9bf1a4c"
+                  LastKnownName="Save Changes"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="70b2b67b-bea4-4638-8444-acede9bf1a4c"
+            name="Save Changes"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9da4b5f3-f440-4493-9f95-07070bdd7a48"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ed5de527-ccf7-407b-b3b5-9f48948afbd8"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="ed5de527-ccf7-407b-b3b5-9f48948afbd8"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="f51b8efd-9bc5-41f8-8af1-d81502ceb486"
+        name="AlertProspectToSignUp"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="57e8f027-1360-46b7-bc33-149fcf36f0bd"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81b4b2d1-e727-4716-a688-c8622f182a0f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b1b5119d-7260-40be-8412-4e8af2772be8"
+                  LastKnownName="Prospect Receives Email"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="b1b5119d-7260-40be-8412-4e8af2772be8"
+            name="Prospect Receives Email"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6d01144f-4494-412e-9c9d-bbf5091276aa"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f805a662-e5bb-4be0-b3eb-75e8a33bf031"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="02c2f64a-2d22-4a64-a10b-6b8cf7b1ba13"
+            name="Prospect's Data"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="4a393c81-6ebe-4eef-9f20-6c0362d79a1a"
+                guard="Verify Data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="a2441f36-0427-4ad5-88d3-121454a55d0f"
+                  LastKnownName="User Confirms Data"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="f26161ab-ea54-43f4-8ffa-d4d35b9336a0"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="ef7ecc7f-7347-4e45-98b5-f222e48ee532"
+            name="Prospect Ops In"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3c00ace8-19fa-40a7-8171-1301ae832b5b"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="81f59543-0fe7-4f0b-8c84-98933ed68b4b"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="36a334ee-ab7a-4135-a0b3-44f09f25d5b8"
+            name="Prospect Declines"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="29590f41-fb16-4e66-ad69-75341d89f2f2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6f9473a7-200c-4be9-8e03-6bcb9f8e99ce"
+                  LastKnownName="Prospect Removed from Mailing List"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d0712423-badb-44df-8485-82fbe68b5afd"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="81f59543-0fe7-4f0b-8c84-98933ed68b4b"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6f9473a7-200c-4be9-8e03-6bcb9f8e99ce"
+            name="Prospect Removed from Mailing List"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a1ea3750-04a7-4c9c-abba-4926b37517ad"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="edb0209d-421d-4c91-aa5d-2480c4e9b8ba"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="f805a662-e5bb-4be0-b3eb-75e8a33bf031"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="69cf22a4-eb86-4c68-8ac8-7458f9a691f5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="36a334ee-ab7a-4135-a0b3-44f09f25d5b8"
+                  LastKnownName="Prospect Declines"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="bb339883-f548-4535-b75f-ac1407b8039e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ef7ecc7f-7347-4e45-98b5-f222e48ee532"
+                  LastKnownName="Prospect Ops In"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode
+            Id="81f59543-0fe7-4f0b-8c84-98933ed68b4b"
+            name="Merge1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f6b1b8e0-59f2-4be2-882f-7fe1cc683850"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="02c2f64a-2d22-4a64-a10b-6b8cf7b1ba13"
+                  LastKnownName="Prospect's Data"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="a2441f36-0427-4ad5-88d3-121454a55d0f"
+            name="User Confirms Data"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="977afd81-226d-4190-8640-0d4f9c5a3c54"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d5b3e57b-4f01-4d72-a2a4-50d76aa5a191"
+                  LastKnownName="User submits Sign Up"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="07a8320b-c994-4895-95f9-46527ea2e16b"
+                guard="Edit Data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="02c2f64a-2d22-4a64-a10b-6b8cf7b1ba13"
+                  LastKnownName="Prospect's Data"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a5fff478-cce9-464c-8608-7ab8ed72383c"
+            name="User Sent to Homepage"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3109a010-c84c-424d-950f-45ef3302dfad"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="edb0209d-421d-4c91-aa5d-2480c4e9b8ba"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d5b3e57b-4f01-4d72-a2a4-50d76aa5a191"
+            name="User submits Sign Up"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="db3f83d5-9b1a-4566-a495-10521c315eb2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a5fff478-cce9-464c-8608-7ab8ed72383c"
+                  LastKnownName="User Sent to Homepage"
+                  LastKnownLocation="ToyshopReplication.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="edb0209d-421d-4c91-aa5d-2480c4e9b8ba"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="cab704fb-3bdd-4d52-abb8-a4a95afd2156" name="AlertProspectToSignUp" linkedPackageId="9530a9eb-ff25-4ad8-83d9-9b8bd453dfdc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="938b24b6-4c72-4fd5-805f-c854566b59a1">
+      <profileInstance Id="36d65bd1-08c6-4a78-af89-6174a64af8a3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0580eeb9-3136-46c9-8e44-2f332c974fe9">
+      <profileInstance Id="3de65608-0c6a-4501-b9df-43480201dd9c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="4b77564c-ac82-49bf-a02a-32b5034dab5d" name="AlertProspectToSignUp" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f51b8efd-9bc5-41f8-8af1-d81502ceb486" />
+        <nodes>
+          <initialNode Id="189ad5ec-74c3-45e6-93c2-07bb41fe1449" name="Initial1" isLeaf="false">
+            <elementDefinition Id="57e8f027-1360-46b7-bc33-149fcf36f0bd" />
+            <flowNodeTargets>
+              <controlFlow Id="9c141892-3bbc-4081-a237-ed615d82151b" isLeaf="false">
+                <opaqueActionMoniker Id="206412d0-89da-4114-8131-c323c56f43f7" LastKnownName="Prospect Receives Email" />
+                <elementDefinition Id="81b4b2d1-e727-4716-a688-c8622f182a0f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="206412d0-89da-4114-8131-c323c56f43f7" name="Prospect Receives Email" isLeaf="false">
+            <elementDefinition Id="b1b5119d-7260-40be-8412-4e8af2772be8" />
+            <flowNodeTargets>
+              <controlFlow Id="750ee3cd-520c-46d0-83b8-24a8692163e3" isLeaf="false">
+                <decisionNodeMoniker Id="26f9dd15-4bab-478c-9070-43d0335c4a6a" LastKnownName="Decision1" />
+                <elementDefinition Id="6d01144f-4494-412e-9c9d-bbf5091276aa" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="ab6ca29e-4008-4e7f-b794-17eafee37177" name="Prospect's Data" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="02c2f64a-2d22-4a64-a10b-6b8cf7b1ba13" />
+            <objectFlowTargets>
+              <objectFlow Id="85597080-64de-44dc-87aa-90e3cdf68704" guard="Verify Data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="585997e5-0b36-4335-a47d-39d6872ed7ee" LastKnownName="User Confirms Data" />
+                <elementDefinition Id="4a393c81-6ebe-4eef-9f20-6c0362d79a1a" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="b2120f83-a058-4eb6-855c-57f133841f48" name="2147483647" value="2147483647">
+                <elementDefinition Id="f26161ab-ea54-43f4-8ffa-d4d35b9336a0" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="5696646b-2488-4c5b-922f-f91187ac7467" name="Prospect Ops In" isLeaf="false">
+            <elementDefinition Id="ef7ecc7f-7347-4e45-98b5-f222e48ee532" />
+            <flowNodeTargets>
+              <controlFlow Id="f59dcb25-7296-4be6-8b90-5e21a6a857d0" isLeaf="false">
+                <mergeNodeMoniker Id="d5621542-c83b-4ffd-a6ce-9eb9cbebc24f" LastKnownName="Merge1" />
+                <elementDefinition Id="3c00ace8-19fa-40a7-8171-1301ae832b5b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3d15cd76-8d95-4084-b92a-398486959ade" name="Prospect Declines" isLeaf="false">
+            <elementDefinition Id="36a334ee-ab7a-4135-a0b3-44f09f25d5b8" />
+            <flowNodeTargets>
+              <controlFlow Id="7cdf5a75-4873-41b4-b2f9-157a7216fa10" isLeaf="false">
+                <opaqueActionMoniker Id="2c7214a7-83de-4b19-8965-e4cf0612dfc5" LastKnownName="Prospect Removed from Mailing List" />
+                <elementDefinition Id="29590f41-fb16-4e66-ad69-75341d89f2f2" />
+              </controlFlow>
+              <controlFlow Id="e1274d71-1916-47df-9338-e280e8049cad" isLeaf="false">
+                <mergeNodeMoniker Id="d5621542-c83b-4ffd-a6ce-9eb9cbebc24f" LastKnownName="Merge1" />
+                <elementDefinition Id="d0712423-badb-44df-8485-82fbe68b5afd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2c7214a7-83de-4b19-8965-e4cf0612dfc5" name="Prospect Removed from Mailing List" isLeaf="false">
+            <elementDefinition Id="6f9473a7-200c-4be9-8e03-6bcb9f8e99ce" />
+            <flowNodeTargets>
+              <controlFlow Id="45b487c6-9c89-4efc-8cb0-7b9a12fd2bda" isLeaf="false">
+                <activityFinalNodeMoniker Id="8e5315cb-7fac-466c-bf3d-03c602bc628b" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a1ea3750-04a7-4c9c-abba-4926b37517ad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="26f9dd15-4bab-478c-9070-43d0335c4a6a" name="Decision1" isLeaf="false">
+            <elementDefinition Id="f805a662-e5bb-4be0-b3eb-75e8a33bf031" />
+            <flowNodeTargets>
+              <controlFlow Id="ece698c3-cf4f-4f91-bc18-6bcc71c0c0b8" isLeaf="false">
+                <opaqueActionMoniker Id="3d15cd76-8d95-4084-b92a-398486959ade" LastKnownName="Prospect Declines" />
+                <elementDefinition Id="69cf22a4-eb86-4c68-8ac8-7458f9a691f5" />
+              </controlFlow>
+              <controlFlow Id="e67c60e6-169b-4107-a139-c20385e43491" isLeaf="false">
+                <opaqueActionMoniker Id="5696646b-2488-4c5b-922f-f91187ac7467" LastKnownName="Prospect Ops In" />
+                <elementDefinition Id="bb339883-f548-4535-b75f-ac1407b8039e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode Id="d5621542-c83b-4ffd-a6ce-9eb9cbebc24f" name="Merge1" isLeaf="false">
+            <elementDefinition Id="81f59543-0fe7-4f0b-8c84-98933ed68b4b" />
+            <objectFlowTargets>
+              <objectFlow Id="28b53d6e-7b2f-40f8-ab92-646aa1d5fefa" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="ab6ca29e-4008-4e7f-b794-17eafee37177" LastKnownName="Prospect's Data" />
+                <elementDefinition Id="f6b1b8e0-59f2-4be2-882f-7fe1cc683850" />
+              </objectFlow>
+            </objectFlowTargets>
+          </mergeNode>
+          <opaqueAction Id="585997e5-0b36-4335-a47d-39d6872ed7ee" name="User Confirms Data" isLeaf="false">
+            <elementDefinition Id="a2441f36-0427-4ad5-88d3-121454a55d0f" />
+            <flowNodeTargets>
+              <controlFlow Id="03ba669b-bea3-4bf9-b8a1-996c964a860d" isLeaf="false">
+                <opaqueActionMoniker Id="28e4015f-89c5-4edb-922c-12b0d8fef1a0" LastKnownName="User submits Sign Up" />
+                <elementDefinition Id="977afd81-226d-4190-8640-0d4f9c5a3c54" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="d71f973c-9aa5-455d-bd43-ad80b1ab7c50" guard="Edit Data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="ab6ca29e-4008-4e7f-b794-17eafee37177" LastKnownName="Prospect's Data" />
+                <elementDefinition Id="07a8320b-c994-4895-95f9-46527ea2e16b" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="f4682bf3-33f6-46a7-86ac-84de2abec5d5" name="User Sent to Homepage" isLeaf="false">
+            <elementDefinition Id="a5fff478-cce9-464c-8608-7ab8ed72383c" />
+            <flowNodeTargets>
+              <controlFlow Id="3efb62fb-da06-44b0-9336-1c1577e7ffc1" isLeaf="false">
+                <activityFinalNodeMoniker Id="8e5315cb-7fac-466c-bf3d-03c602bc628b" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="3109a010-c84c-424d-950f-45ef3302dfad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="28e4015f-89c5-4edb-922c-12b0d8fef1a0" name="User submits Sign Up" isLeaf="false">
+            <elementDefinition Id="d5b3e57b-4f01-4d72-a2a4-50d76aa5a191" />
+            <flowNodeTargets>
+              <controlFlow Id="11c17941-e1ad-4654-8049-953bb472d089" isLeaf="false">
+                <opaqueActionMoniker Id="f4682bf3-33f6-46a7-86ac-84de2abec5d5" LastKnownName="User Sent to Homepage" />
+                <elementDefinition Id="db3f83d5-9b1a-4566-a495-10521c315eb2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="8e5315cb-7fac-466c-bf3d-03c602bc628b" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="edb0209d-421d-4c91-aa5d-2480c4e9b8ba" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="9530a9eb-ff25-4ad8-83d9-9b8bd453dfdc" name="ToyshopReplication">
+    <elementDefinition Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd" />
+  </package>
+</activityRootModel>

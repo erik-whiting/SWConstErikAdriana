@@ -78,6 +78,20 @@
       <SubType>Content</SubType>
       <DependentUpon>HW3\ToyshopOrdersModel.classdiagram</DependentUpon>
     </Content>
+    <Content Include="HW4\AddFamilyMember.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW4\AddFamilyMember.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW4\AddFamilyMember.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="HW4\AlertProspectToSignUp.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HW4\AlertProspectToSignUp.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HW4\AlertProspectToSignUp.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="Woodshop Brainstorm.usecasediagram">
       <SubType>Content</SubType>
     </Content>
@@ -91,5 +105,6 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="HW3" />
+    <Folder Include="HW4" />
   </ItemGroup>
 </Project>

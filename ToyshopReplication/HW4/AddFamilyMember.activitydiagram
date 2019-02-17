@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="2638c303-6713-4428-b308-0ba1de5f33a9" name="AddFamilyMember" linkedPackageId="9c30575a-bd3d-471c-b723-0c10b19ff9c0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c0bd0c50-349d-4816-989a-7eb37078625f">
+      <profileInstance Id="1e4f4861-3956-4358-afa1-1d3f4171fdb6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="933b8e50-70c3-469e-896a-c975c215800c">
+      <profileInstance Id="03a0f3cf-b2cb-43ea-8ede-699ff3f84e7b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="7ebf2ee3-eb19-4deb-ad46-5e322145c2d0" name="AddFamilyMember" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="1eb27f88-5cd0-4a24-8b86-e39aa287bee7" />
+        <nodes>
+          <initialNode Id="88376c75-154a-445f-a098-c0e06a49717f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="94476f89-a0d6-4d8a-a56a-ea84aef818c2" />
+            <flowNodeTargets>
+              <controlFlow Id="fd9f93f1-bb4d-4271-b2d6-b57c6e94a0bb" isLeaf="false">
+                <opaqueActionMoniker Id="14447aba-4d9e-46a3-a0a1-8a1a618120ce" LastKnownName="Click &quot;Add Family Member&quot;" />
+                <elementDefinition Id="9c945577-868e-4dff-9338-3bffe120d788" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="14447aba-4d9e-46a3-a0a1-8a1a618120ce" name="Click &quot;Add Family Member&quot;" isLeaf="false">
+            <elementDefinition Id="97758dd2-d42a-4245-b709-caf0edbb1020" />
+            <flowNodeTargets>
+              <controlFlow Id="f82754c8-ef7c-4a26-b071-1a76b79bf2ce" isLeaf="false">
+                <opaqueActionMoniker Id="ed8ac55e-1f7e-4ba0-ab27-a8de81c63587" LastKnownName="Add Family Member Information" />
+                <elementDefinition Id="0a18cd46-ce82-4769-a56a-59114c8bf6f5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ed8ac55e-1f7e-4ba0-ab27-a8de81c63587" name="Add Family Member Information" isLeaf="false">
+            <elementDefinition Id="d8afcc3a-027c-4572-9821-9d6e9565b2ef" />
+            <flowNodeTargets>
+              <controlFlow Id="42a0fd07-6565-40b1-9ea4-440f99c55f5e" isLeaf="false">
+                <decisionNodeMoniker Id="8bfe5205-c5b4-4e21-b7d2-c2160866acef" LastKnownName="Decision1" />
+                <elementDefinition Id="016013bb-febd-45e5-96f2-8d8634590a3f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8bfe5205-c5b4-4e21-b7d2-c2160866acef" name="Decision1" isLeaf="false">
+            <elementDefinition Id="08abc1ce-2db3-438e-80e7-88bf9158da05" />
+            <flowNodeTargets>
+              <controlFlow Id="a4820969-eef0-4c5d-a5a7-b903c43e8561" guard="Add another family member" isLeaf="false">
+                <opaqueActionMoniker Id="14447aba-4d9e-46a3-a0a1-8a1a618120ce" LastKnownName="Click &quot;Add Family Member&quot;" />
+                <elementDefinition Id="f3ca71a9-14f7-4456-8fcb-6350ef9ee901" />
+              </controlFlow>
+              <controlFlow Id="e00384d7-35f2-4bd7-80e1-5d8d6ff1f60d" guard="Done Adding" isLeaf="false">
+                <opaqueActionMoniker Id="f691cdd5-419f-40e0-ba1b-7ce82502ce28" LastKnownName="Save Changes" />
+                <elementDefinition Id="e3485d16-4933-482c-b6ba-079d42885fee" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="f691cdd5-419f-40e0-ba1b-7ce82502ce28" name="Save Changes" isLeaf="false">
+            <elementDefinition Id="70b2b67b-bea4-4638-8444-acede9bf1a4c" />
+            <flowNodeTargets>
+              <controlFlow Id="315aabc5-4f96-47e5-843a-3d332192a25b" isLeaf="false">
+                <activityFinalNodeMoniker Id="57bd7951-44d6-4e5c-af32-2bb5f3293d1f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9da4b5f3-f440-4493-9f95-07070bdd7a48" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="57bd7951-44d6-4e5c-af32-2bb5f3293d1f" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="ed5de527-ccf7-407b-b3b5-9f48948afbd8" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="9c30575a-bd3d-471c-b723-0c10b19ff9c0" name="ToyshopReplication">
+    <elementDefinition Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd" />
+  </package>
+</activityRootModel>
