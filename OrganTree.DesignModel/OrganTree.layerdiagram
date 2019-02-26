@@ -1,41 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e2a65d9d-ed8f-40f4-8b20-32b4f756283d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
   <comments>
-    <comment Id="99411d06-df92-4cdb-8d2d-d9d47b906c54" name="Comment1">
-      <body>Source: Microsoft Application Architecture Guide, 2nd Edition.
-Refer to "Chapter 21: Designing Web Applications" for more information.
-URL:http://msdn.microsoft.com/en-us/library/ee658099.aspx</body>
+    <comment Id="f723cbed-f3c1-4613-9ecd-fa2fa1cfb206" name="Comment1">
+      <body>Unsure about this one</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="412373ee-8795-42ec-9b34-501f0dfed45d" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="bf2a476d-2bec-49de-aa37-0dd6e7c36487" name="Comment2">
+      <body>For emails to providers and family members</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="f6e4b33f-4b7b-457d-8500-5896a32042a6" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="d8826641-69d3-458e-b57d-37bd8156b44f" name="Comment3">
+      <body>Able to get into the system</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="2c191c03-d06d-4b4f-abe5-8df0c7aba989" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="c5556768-ab34-4e97-8046-d1e060ac0ead" name="Comment4">
+      <body>Authorized to view what data?</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="7a9c236d-9303-46f2-9338-8d5176ef09bc" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
     </comment>
   </comments>
   <layers>
     <layer Id="5b45f6ae-a8a8-4dc6-b1b9-d6bcf37bceac" name="Web Server">
       <childLayers>
-        <layer Id="93d3cd5c-1422-48bb-91bc-75466b6ad1ce" name="Business Layer">
+        <layer Id="93d3cd5c-1422-48bb-91bc-75466b6ad1ce" name="OrganTree Domain">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="b51f4407-fad1-4459-a219-a2c2df59d690" direction="Bidirectional">
+              <layerMoniker Id="6a11afbc-c5e4-4531-8053-a455aca1b2d5" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
           <childLayers>
-            <layer Id="e2958e27-18f6-457b-bb47-f5fdd5ec4293" name="Application Facade" />
-            <layer Id="8a264d75-aa6e-417f-8ed6-8fa076bbe1e2" name="Business Workflow" />
-            <layer Id="48eab0a1-1e07-4790-92e7-488fc4fda2a0" name="Business Components" />
-            <layer Id="147de2f1-ae5f-483c-8f03-92b345d98f81" name="Business Entities" />
+            <layer Id="8a264d75-aa6e-417f-8ed6-8fa076bbe1e2" name="Donation Requirements" />
+            <layer Id="48eab0a1-1e07-4790-92e7-488fc4fda2a0" name="Family Tree Components" />
+            <layer Id="147de2f1-ae5f-483c-8f03-92b345d98f81" name="Patient Entities" />
           </childLayers>
         </layer>
         <layer Id="6a11afbc-c5e4-4531-8053-a455aca1b2d5" name="Data Layer">
           <childLayers>
-            <layer Id="db2491aa-4aca-4cf5-9983-431f91491fb0" name="Data Access Components" />
+            <layer Id="db2491aa-4aca-4cf5-9983-431f91491fb0" name="Data Access Components">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="7b55105d-ef2d-4617-9574-1905d2d049e5" direction="Bidirectional">
+                  <layerMoniker Id="cedcd293-f6c5-4b37-acd4-be16fee3a036" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
             <layer Id="412373ee-8795-42ec-9b34-501f0dfed45d" name="Data Helpers/ Utilities" />
-            <layer Id="a65802d7-d170-460c-9d9b-8e444463b028" name="Service Agents" />
           </childLayers>
         </layer>
-        <layer Id="0a982752-ec06-4e16-b08d-d73001473408" name="Cross Cutting">
+        <layer Id="0a982752-ec06-4e16-b08d-d73001473408" name="Shared Infrastructure">
           <childLayers>
-            <layer Id="22f4879f-862c-4ad5-aec3-f99cc9529e0f" name="Security" />
+            <layer Id="22f4879f-862c-4ad5-aec3-f99cc9529e0f" name="Security">
+              <childLayers>
+                <layer Id="2c191c03-d06d-4b4f-abe5-8df0c7aba989" name="Authentication" />
+                <layer Id="7a9c236d-9303-46f2-9338-8d5176ef09bc" name="Authorization" />
+              </childLayers>
+            </layer>
             <layer Id="f6e4b33f-4b7b-457d-8500-5896a32042a6" name="Communication" />
-            <layer Id="866ba2ca-bde4-4583-bea8-730a106de167" name="Operational Management" />
+            <layer Id="866ba2ca-bde4-4583-bea8-730a106de167" name="Error Handling" />
           </childLayers>
         </layer>
-        <layer Id="d6331196-62a7-4d01-bbc8-11f5ecc80cfd" name="Presentation Layer">
+        <layer Id="d6331196-62a7-4d01-bbc8-11f5ecc80cfd" name="Organ Tree Web">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="261158a6-446a-4072-8de9-52651d0028ba" direction="Bidirectional">
+              <layerMoniker Id="93d3cd5c-1422-48bb-91bc-75466b6ad1ce" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
           <childLayers>
             <layer Id="c6be826d-0455-47ea-8d87-007723f7029a" name="UI Components" />
-            <layer Id="b6980e96-2459-426a-88e5-0bfca97d76c1" name="UI Process Components" />
           </childLayers>
         </layer>
       </childLayers>
@@ -43,10 +88,17 @@ URL:http://msdn.microsoft.com/en-us/library/ee658099.aspx</body>
     <layer Id="8284b6ee-6651-4d8b-b60f-bab20328498d" name="Client">
       <childLayers>
         <layer Id="aacc5bf6-fa43-49b5-ae7e-93fe5b8e21b9" name=" Browser">
-          <childLayers>
-            <layer Id="6d031bbb-096d-445c-bd9f-0725942b7eff" name="Rendering" />
-          </childLayers>
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="b18844f8-915e-4750-aa92-b3b547c55167" direction="Bidirectional">
+              <layerMoniker Id="d6331196-62a7-4d01-bbc8-11f5ecc80cfd" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
         </layer>
+      </childLayers>
+    </layer>
+    <layer Id="6e086897-790b-412e-b696-4fb1aaaf29ba" name="Cloud DB Server">
+      <childLayers>
+        <layer Id="cedcd293-f6c5-4b37-acd4-be16fee3a036" name="Database" />
       </childLayers>
     </layer>
   </layers>
