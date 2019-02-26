@@ -1,1 +1,68 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="87bb5386-8e07-4bb0-ae2a-b2578229a9f0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="75b6a45c-cb08-454f-806e-e6270d36e401" name="Web Server">
+      <childLayers>
+        <layer Id="f46c06e9-69ad-454c-a52f-9702c1f795b7" name="Toyshop Domain">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="f2708e5f-0c5f-4952-b48f-cdfb6286a8d1" direction="Bidirectional">
+              <layerMoniker Id="b8fa65c3-1f14-4499-946f-12d6529bf12d" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="6ddafcdb-b239-4074-9ac8-bd83060fdb57" direction="Bidirectional">
+              <layerMoniker Id="c691e99b-8746-4c57-afbe-534374e3ce60" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="b8fa65c3-1f14-4499-946f-12d6529bf12d" name="Toyshop SQL Data Access">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="8a8eb945-dab0-4488-9217-25c3dd6b84f6" direction="Bidirectional">
+              <layerMoniker Id="05915b53-b7a0-4d8a-a51c-5558799309e7" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="efb6a5c2-3541-4c3a-b3b0-51641b90044d" name="Toyshop Infrastructure" />
+        <layer Id="63fd303b-442e-4192-b25a-0d1fbf922304" name="Toyshop Website">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="7b746357-6ecb-44d5-bff8-c313ee3a8349" direction="Bidirectional">
+              <layerMoniker Id="f46c06e9-69ad-454c-a52f-9702c1f795b7" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="c691e99b-8746-4c57-afbe-534374e3ce60" name="Credit Card Service">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="1a1f827c-0280-48f2-afb0-3354f13ec036" direction="Bidirectional">
+              <layerMoniker Id="450a8773-27b1-4426-af84-4550088484bb" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="c6874863-9882-4c33-9460-afaee46eca80" name="Client">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c8b43518-ae5c-428c-bf12-5c59609374df" direction="Bidirectional">
+          <layerMoniker Id="63fd303b-442e-4192-b25a-0d1fbf922304" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="e5a658cf-f5bf-4576-a125-82718573c13b" name=" Browser" />
+      </childLayers>
+    </layer>
+    <layer Id="450a8773-27b1-4426-af84-4550088484bb" name="Credit Card Processor Service" />
+    <layer Id="a2c3fa13-726b-4671-a300-432c8ea9272f" name="SQL Server">
+      <childLayers>
+        <layer Id="05915b53-b7a0-4d8a-a51c-5558799309e7" name="Toyshop DB" />
+      </childLayers>
+    </layer>
+    <layer Id="6dbd1b2d-fc54-41e5-8eca-ffa2d64743c0" name="Manager">
+      <childLayers>
+        <layer Id="417a1ba4-fb2d-48ad-9395-1c80ec219842" name="Admin Client">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="7df525e3-6a2d-4d36-b922-0c8a5402fa46" direction="Forward">
+              <layerMoniker Id="05915b53-b7a0-4d8a-a51c-5558799309e7" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>
