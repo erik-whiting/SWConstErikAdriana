@@ -36,6 +36,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Checkout.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="Toyshop.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Toyshop.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Toyshop.componentdiagram</DependentUpon>
+    </Content>
     <Content Include="ToyshopDomainModel.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -61,5 +68,18 @@
     <Content Include="ModelDefinition\ToyshopReplication.uml">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Toyshop.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Toyshop.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Toyshop.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Toyshop.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Toyshop.layerdiagram</DependentUpon>
+    </Validate>
   </ItemGroup>
 </Project>
