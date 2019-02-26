@@ -22,96 +22,33 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="HW3\BrowseToys.activitydiagram">
+    <Content Include="BrowseToys.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="HW3\BrowseToys.activitydiagram.layout">
+    <Content Include="BrowseToys.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>HW3\BrowseToys.activitydiagram</DependentUpon>
+      <DependentUpon>BrowseToys.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="HW3\Checkout.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW3\Checkout.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW3\Checkout.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="HW3\OrganTreeBusinessDomain.componentdiagram">
+    <Content Include="Checkout.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="HW3\OrganTreeBusinessDomain.componentdiagram.layout">
+    <Content Include="Checkout.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>HW3\OrganTreeBusinessDomain.componentdiagram</DependentUpon>
+      <DependentUpon>Checkout.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="HW3\OrganTree\FamilyTreeModel.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW3\OrganTree\FamilyTreeModel.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW3\OrganTree\FamilyTreeModel.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="HW3\OrganTree\OrganTreeDomainModel.classdiagram">
+    <Content Include="ToyshopDomainModel.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="HW3\OrganTree\OrganTreeDomainModel.classdiagram.layout">
+    <Content Include="ToyshopDomainModel.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>HW3\OrganTree\OrganTreeDomainModel.classdiagram</DependentUpon>
+      <DependentUpon>ToyshopDomainModel.classdiagram</DependentUpon>
     </Content>
-    <Content Include="HW3\OrganTree\PatientModel.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW3\OrganTree\PatientModel.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW3\OrganTree\PatientModel.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="HW3\ToyshopDomainModel.classdiagram">
+    <Content Include="ToyshopOrdersModel.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="HW3\ToyshopDomainModel.classdiagram.layout">
+    <Content Include="ToyshopOrdersModel.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>HW3\ToyshopDomainModel.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="HW3\ToyshopOrdersModel.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW3\ToyshopOrdersModel.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW3\ToyshopOrdersModel.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="HW4\AddFamilyMember.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW4\AddFamilyMember.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW4\AddFamilyMember.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="HW4\AlertPotentialDonor.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW4\AlertPotentialDonor.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW4\AlertPotentialDonor.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="HW4\AlertProspectToSignUp.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW4\AlertProspectToSignUp.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW4\AlertProspectToSignUp.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="HW4\SearchForDonor.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW4\SearchForDonor.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW4\SearchForDonor.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="HW4\SystemSearchForDonor.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="HW4\SystemSearchForDonor.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>HW4\SystemSearchForDonor.activitydiagram</DependentUpon>
+      <DependentUpon>ToyshopOrdersModel.classdiagram</DependentUpon>
     </Content>
     <Content Include="Woodshop Brainstorm.usecasediagram">
       <SubType>Content</SubType>
@@ -120,12 +57,9 @@
       <SubType>Content</SubType>
       <DependentUpon>Woodshop Brainstorm.usecasediagram</DependentUpon>
     </Content>
-    <Folder Include="HW3\OrganTree" />
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\ToyshopReplication.uml">
       <SubType>Content</SubType>
     </Content>
-    <Folder Include="HW3" />
-    <Folder Include="HW4" />
   </ItemGroup>
 </Project>
