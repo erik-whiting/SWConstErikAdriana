@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="28f630e0-2bcf-4ce1-9456-f5420a87bfcd"
   name="ToyshopReplication" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -77,6 +77,26 @@ Manage Inventory</body>
         <classMoniker
           Id="7cf6e552-ed3c-4813-a25c-211a6e7c8c86"
           LastKnownName="Medical Record"
+          LastKnownLocation="ToyshopReplication.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="14ce87bf-45e3-4088-bb3f-463af49e2143">
+      <body>out of scope</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="c9c5df9a-d638-4ff7-8c05-4a386f2e99e8"
+          LastKnownName="ToyshopAdmin"
+          LastKnownLocation="ToyshopReplication.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="1a3e8914-0c13-47bd-b6c6-513896608182">
+      <body>External Service</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="ec5f7d76-bb53-4fd6-88f2-520bfb48daba"
+          LastKnownName="Credit Card Processing Service"
           LastKnownLocation="ToyshopReplication.uml" />
       </annotatedElements>
     </comment>
@@ -3775,6 +3795,148 @@ Manage Inventory</body>
             isComposite="false" />
         </ownedAttributes>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="77604aea-6690-4f7f-99f5-4c83b8060823"
+        name="Toyshop.Web.dll"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b325a775-8b6a-4507-9775-f9a387eefa62">
+            <componentMoniker
+              Id="b633b7af-92ec-4c6f-9171-1e83c7b829f9"
+              LastKnownName="Toyshop.Domain.dll"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+          <dependency
+            Id="24cd791e-79d6-410d-b8eb-651378031af4">
+            <componentMoniker
+              Id="9a961875-f060-483b-bd87-d8d7ae27641d"
+              LastKnownName="Toyshop.Infrastrcuture.dll"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="b633b7af-92ec-4c6f-9171-1e83c7b829f9"
+        name="Toyshop.Domain.dll"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="538215d4-eb99-4e80-b273-a25d35b23f7e">
+            <componentMoniker
+              Id="9a961875-f060-483b-bd87-d8d7ae27641d"
+              LastKnownName="Toyshop.Infrastrcuture.dll"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+          <dependency
+            Id="ddfc121f-a414-46ab-b858-bd77cd8d59fa">
+            <componentMoniker
+              Id="3b85b0b1-1f3c-4e91-9048-caaa6c5612d2"
+              LastKnownName="Toyshop.SQLRepository"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+          <dependency
+            Id="36775a55-eadf-461f-a7df-8fe7c290e76c">
+            <componentMoniker
+              Id="f570cea9-05d8-48ec-9e4c-f11b6169b96d"
+              LastKnownName="ToyshopMockCreditCardServiceAgent"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3b85b0b1-1f3c-4e91-9048-caaa6c5612d2"
+        name="Toyshop.SQLRepository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="009b006d-b1e5-4893-8f8c-322b78e28c78">
+            <componentMoniker
+              Id="85755536-b645-46ef-b736-265221cb9caf"
+              LastKnownName="Toyshop.Database"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+          <dependency
+            Id="55367082-f3d3-44ae-85bc-c5c417fc0ea0">
+            <componentMoniker
+              Id="9a961875-f060-483b-bd87-d8d7ae27641d"
+              LastKnownName="Toyshop.Infrastrcuture.dll"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f570cea9-05d8-48ec-9e4c-f11b6169b96d"
+        name="ToyshopMockCreditCardServiceAgent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="fe96a375-9839-4c11-99ac-62f235ecbf5b">
+            <componentMoniker
+              Id="ec5f7d76-bb53-4fd6-88f2-520bfb48daba"
+              LastKnownName="Credit Card Processing Service"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="85755536-b645-46ef-b736-265221cb9caf"
+        name="Toyshop.Database"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9a961875-f060-483b-bd87-d8d7ae27641d"
+        name="Toyshop.Infrastrcuture.dll"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ec5f7d76-bb53-4fd6-88f2-520bfb48daba"
+        name="Credit Card Processing Service"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c9c5df9a-d638-4ff7-8c05-4a386f2e99e8"
+        name="ToyshopAdmin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="4355a131-eb9d-40b5-80ce-c5e0adf6c0af">
+            <componentMoniker
+              Id="85755536-b645-46ef-b736-265221cb9caf"
+              LastKnownName="Toyshop.Database"
+              LastKnownLocation="ToyshopReplication.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
