@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{df6e7a77-fe41-44b6-b0e5-6e135d45b453}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>OrganTree.AnalysisModel</Name>
+    <RootNamespace>OrganTree.AnalysisModel</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="AddFamilyMember.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AddFamilyMember.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>AddFamilyMember.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="AlertPotentialDonor.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AlertPotentialDonor.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>AlertPotentialDonor.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="AlertProspectToSignUp.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AlertProspectToSignUp.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>AlertProspectToSignUp.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="OrganTreeBusinessDomain.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OrganTreeBusinessDomain.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OrganTreeBusinessDomain.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="OrganTreeDomainModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OrganTreeDomainModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OrganTreeDomainModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="PatientModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PatientModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>PatientModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="SearchForDonor.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SearchForDonor.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SearchForDonor.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="SystemSearchForDonor.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SystemSearchForDonor.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SystemSearchForDonor.activitydiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="FamilyTreeModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FamilyTreeModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FamilyTreeModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\OrganTree.AnalysisModel.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
