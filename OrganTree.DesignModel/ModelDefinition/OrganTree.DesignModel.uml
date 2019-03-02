@@ -34,7 +34,7 @@
               LastKnownLocation="OrganTree.DesignModel.uml" />
           </dependency>
           <dependency
-            Id="1d04601b-255f-4753-a9a1-b28d6123b775">
+            Id="52abfd03-b8c5-4dff-8df5-f2207720d263">
             <componentMoniker
               Id="ec34876c-95dd-4b20-9286-715f531b60f7"
               LastKnownName="OrganTree.Domain.dll"
@@ -52,10 +52,24 @@
         isActiveClass="false">
         <suppliersInternal>
           <dependency
-            Id="1f66b4ae-fd6e-4a2c-adfd-06e09ca1828d">
+            Id="8f776953-29bd-49ab-bacb-1b942cf0c5f4">
             <componentMoniker
               Id="872b63b9-0893-4a0b-8d24-638b08b52716"
               LastKnownName="OrganTree.SharedInfrastructure.dll"
+              LastKnownLocation="OrganTree.DesignModel.uml" />
+          </dependency>
+          <dependency
+            Id="05a54dac-172d-4403-a12e-62e46cbb7463">
+            <componentMoniker
+              Id="9f13dec1-fd64-43e8-8681-c8955f7f74d0"
+              LastKnownName="OrganTree.SQLRepository.dll"
+              LastKnownLocation="OrganTree.DesignModel.uml" />
+          </dependency>
+          <dependency
+            Id="9fede971-28ce-42cd-949c-82276d4f3c63">
+            <componentMoniker
+              Id="6cf0d777-8136-4bc0-bcc6-0c3504ff674f"
+              LastKnownName="OrganTree.ExchangeServerServiceAgent.dll"
               LastKnownLocation="OrganTree.DesignModel.uml" />
           </dependency>
         </suppliersInternal>
@@ -73,7 +87,7 @@
             <type_NamedElement>
               <componentMoniker
                 Id="913f0a20-7368-4986-a860-c63dc9134694"
-                LastKnownName="Component4"
+                LastKnownName="Component5"
                 LastKnownLocation="OrganTree.DesignModel.uml" />
             </type_NamedElement>
           </part>
@@ -90,7 +104,7 @@
             <type_NamedElement>
               <componentMoniker
                 Id="c3b41c00-ebc8-4ede-9e55-6c3b2373a9cb"
-                LastKnownName="Component5"
+                LastKnownName="Component7"
                 LastKnownLocation="OrganTree.DesignModel.uml" />
             </type_NamedElement>
           </part>
@@ -173,6 +187,23 @@
                 LastKnownLocation="OrganTree.DesignModel.uml" />
             </type_NamedElement>
           </part>
+          <part
+            Id="9ca4f634-2e17-49b7-90be-6dac809abd16"
+            name="ExchangeServer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="9648d160-1acb-4772-a024-d801fa1f277b"
+                LastKnownName="Component4"
+                LastKnownLocation="OrganTree.DesignModel.uml" />
+            </type_NamedElement>
+          </part>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -203,7 +234,7 @@
     <packageHasNamedElement>
       <component
         Id="913f0a20-7368-4986-a860-c63dc9134694"
-        name="Component4"
+        name="Component5"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -211,7 +242,7 @@
     <packageHasNamedElement>
       <component
         Id="c3b41c00-ebc8-4ede-9e55-6c3b2373a9cb"
-        name="Component5"
+        name="Component7"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -223,6 +254,115 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9648d160-1acb-4772-a024-d801fa1f277b"
+        name="Component4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9f13dec1-fd64-43e8-8681-c8955f7f74d0"
+        name="OrganTree.SQLRepository.dll"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c29f75c7-89bf-4af3-8acf-f9ee55d8b5bf">
+            <componentMoniker
+              Id="872b63b9-0893-4a0b-8d24-638b08b52716"
+              LastKnownName="OrganTree.SharedInfrastructure.dll"
+              LastKnownLocation="OrganTree.DesignModel.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="65b668f8-402d-4d08-88fd-b5bc0166d32b"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="896b9314-2799-49af-a4ae-58af86ceb245"
+                LastKnownName="Entity Framework"
+                LastKnownLocation="OrganTree.DesignModel.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="b2c710e2-0137-49b8-9eba-456289778002"
+        name="OrganTree.Database"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="7dd305bc-c77e-42b6-ab0a-5e57bc1693e1"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="4311cd09-7daf-49e1-b871-f49c57f0fd45"
+                LastKnownName="TSQL"
+                LastKnownLocation="OrganTree.DesignModel.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4311cd09-7daf-49e1-b871-f49c57f0fd45"
+        name="TSQL"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="896b9314-2799-49af-a4ae-58af86ceb245"
+        name="Entity Framework"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6cf0d777-8136-4bc0-bcc6-0c3504ff674f"
+        name="OrganTree.ExchangeServerServiceAgent.dll"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5a853855-ae2d-49c4-989f-099f5b59c8fb">
+            <componentMoniker
+              Id="872b63b9-0893-4a0b-8d24-638b08b52716"
+              LastKnownName="OrganTree.SharedInfrastructure.dll"
+              LastKnownLocation="OrganTree.DesignModel.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
