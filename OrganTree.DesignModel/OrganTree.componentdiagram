@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="ab7d39b1-b840-40b1-9078-d13b18797dc7" name="OrganTree" linkedPackageId="b60157ef-ef88-42f1-b149-35bd656a941e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="565a2e29-182c-4c11-a5ad-b7664e1326ba">
-      <profileInstance Id="1e3bacb5-ee23-4022-9997-931085c6b1bd" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="bcdfb29e-ceae-4f87-aa04-51f2d640bc9c">
-      <profileInstance Id="cfe0da00-a91c-48e9-bb5a-30d697058633" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <componentModelHasComponents>
       <component Id="4adefba4-bd9a-464d-a0d5-ee0bbc4f3bda" name="OrganTree.Web.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -23,9 +9,9 @@
             <componentMoniker Id="cd1c6880-0237-49e6-b3c7-bc4bcdd4316d" LastKnownName="OrganTree.SharedInfrastructure.dll" />
             <elementDefinition Id="e48de3c8-17a2-4aae-8602-005128c4839d" />
           </dependency>
-          <dependency Id="f41b8402-311e-49f7-a523-1acd280abf77">
+          <dependency Id="aae3974b-75f1-4216-90ed-2938ab5dc92d">
             <componentMoniker Id="74737324-c04e-49f7-958b-0bd0c3d9c1f2" LastKnownName="OrganTree.Domain.dll" />
-            <elementDefinition Id="1d04601b-255f-4753-a9a1-b28d6123b775" />
+            <elementDefinition Id="51fe30cf-a262-4be2-bdd2-894859b2f469" />
           </dependency>
         </suppliersInternal>
       </component>
@@ -34,13 +20,17 @@
       <component Id="74737324-c04e-49f7-958b-0bd0c3d9c1f2" name="OrganTree.Domain.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ec34876c-95dd-4b20-9286-715f531b60f7" />
         <suppliersInternal>
-          <dependency Id="1c6f7020-b25e-4df0-94b4-b98aac2a83ef">
+          <dependency Id="f148dbd6-ebf6-4ab2-86be-0e3788e17e95">
+            <componentMoniker Id="d752119a-1368-48b3-a859-c8b53f479c35" LastKnownName="Data Access" />
+            <elementDefinition Id="52cf6a14-e745-46e5-a07b-d4fab3e2eb16" />
+          </dependency>
+          <dependency Id="d063ffb8-ed5a-4161-be33-c70b47a3e26d">
             <componentMoniker Id="cd1c6880-0237-49e6-b3c7-bc4bcdd4316d" LastKnownName="OrganTree.SharedInfrastructure.dll" />
-            <elementDefinition Id="1f66b4ae-fd6e-4a2c-adfd-06e09ca1828d" />
+            <elementDefinition Id="2a2a4d04-8c4f-4901-b16f-fd1260d59f1a" />
           </dependency>
         </suppliersInternal>
         <ownedAttributesInternal>
-          <part Id="04b69b4c-b0b8-4893-a860-d5b0d83c599a" name="DonationRequirements" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+          <part Id="04b69b4c-b0b8-4893-a860-d5b0d83c599a" name="DonationRequirements.dll" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
             <elementDefinition Id="4e57d173-3f82-4df9-b880-d000e0c3050a" />
             <type_NamedElement>
               <componentMoniker Id="0efde44d-c84d-4de7-bf2a-e7cf62a6c2f9" LastKnownName="Component4" />
@@ -116,8 +106,55 @@
         <elementDefinition Id="48a1552c-1195-47a5-a9c5-05ad450258c9" />
       </component>
     </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d752119a-1368-48b3-a859-c8b53f479c35" name="Data Access" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9cdff949-d9a9-49ae-8299-66667a316a84" />
+        <suppliersInternal>
+          <dependency Id="9895e978-bff5-4fd1-97b2-36c5ecf927b7">
+            <componentMoniker Id="8cd8d152-9f13-40d2-953b-b46c85099fc3" LastKnownName="Organtree.Database" />
+            <elementDefinition Id="42d83c86-e301-4e59-b4c0-10325d4d6cad" />
+          </dependency>
+          <dependency Id="7748936f-8c8d-4016-a6b6-731fe1d423ab">
+            <componentMoniker Id="cd1c6880-0237-49e6-b3c7-bc4bcdd4316d" LastKnownName="OrganTree.SharedInfrastructure.dll" />
+            <elementDefinition Id="696e05a2-9939-495d-b2f9-ddbc97288d2e" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="c36e1adc-cee0-4d1e-9cfd-cf0570efb7f6" name="OrganTree.DataHelpers.dll" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="9caff8ef-7548-4060-aaeb-6999e3ef730a" />
+            <type_NamedElement>
+              <componentMoniker Id="b21c2aec-76fc-4ab1-b2b9-bcf41cd66bff" LastKnownName="Component7" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b21c2aec-76fc-4ab1-b2b9-bcf41cd66bff" name="Component7" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="29076b92-dcac-4d85-bfb2-1fd16f3935c8" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8cd8d152-9f13-40d2-953b-b46c85099fc3" name="Organtree.Database" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7d90df22-b98e-4d3b-9ee1-bbc206ad0932" />
+      </component>
+    </componentModelHasComponents>
   </packagedElements>
   <package Id="b60157ef-ef88-42f1-b149-35bd656a941e" name="OrganTree.DesignModel">
     <elementDefinition Id="4235980c-8016-4963-afaf-8f365a93b091" />
+    <profileInstances>
+      <packageHasProfileInstances Id="565a2e29-182c-4c11-a5ad-b7664e1326ba">
+        <profileInstance Id="1e3bacb5-ee23-4022-9997-931085c6b1bd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="bcdfb29e-ceae-4f87-aa04-51f2d640bc9c">
+        <profileInstance Id="cfe0da00-a91c-48e9-bb5a-30d697058633" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </componentModel>

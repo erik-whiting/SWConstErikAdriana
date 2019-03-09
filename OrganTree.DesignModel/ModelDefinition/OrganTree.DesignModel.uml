@@ -34,7 +34,7 @@
               LastKnownLocation="OrganTree.DesignModel.uml" />
           </dependency>
           <dependency
-            Id="1d04601b-255f-4753-a9a1-b28d6123b775">
+            Id="51fe30cf-a262-4be2-bdd2-894859b2f469">
             <componentMoniker
               Id="ec34876c-95dd-4b20-9286-715f531b60f7"
               LastKnownName="OrganTree.Domain.dll"
@@ -52,7 +52,14 @@
         isActiveClass="false">
         <suppliersInternal>
           <dependency
-            Id="1f66b4ae-fd6e-4a2c-adfd-06e09ca1828d">
+            Id="52cf6a14-e745-46e5-a07b-d4fab3e2eb16">
+            <componentMoniker
+              Id="9cdff949-d9a9-49ae-8299-66667a316a84"
+              LastKnownName="Data Access"
+              LastKnownLocation="OrganTree.DesignModel.uml" />
+          </dependency>
+          <dependency
+            Id="2a2a4d04-8c4f-4901-b16f-fd1260d59f1a">
             <componentMoniker
               Id="872b63b9-0893-4a0b-8d24-638b08b52716"
               LastKnownName="OrganTree.SharedInfrastructure.dll"
@@ -62,7 +69,7 @@
         <ownedAttributesInternal>
           <part
             Id="4e57d173-3f82-4df9-b880-d000e0c3050a"
-            name="DonationRequirements"
+            name="DonationRequirements.dll"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -220,6 +227,66 @@
       <component
         Id="48a1552c-1195-47a5-a9c5-05ad450258c9"
         name="Component6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9cdff949-d9a9-49ae-8299-66667a316a84"
+        name="Data Access"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="42d83c86-e301-4e59-b4c0-10325d4d6cad">
+            <componentMoniker
+              Id="7d90df22-b98e-4d3b-9ee1-bbc206ad0932"
+              LastKnownName="Organtree.Database"
+              LastKnownLocation="OrganTree.DesignModel.uml" />
+          </dependency>
+          <dependency
+            Id="696e05a2-9939-495d-b2f9-ddbc97288d2e">
+            <componentMoniker
+              Id="872b63b9-0893-4a0b-8d24-638b08b52716"
+              LastKnownName="OrganTree.SharedInfrastructure.dll"
+              LastKnownLocation="OrganTree.DesignModel.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="9caff8ef-7548-4060-aaeb-6999e3ef730a"
+            name="OrganTree.DataHelpers.dll"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="29076b92-dcac-4d85-bfb2-1fd16f3935c8"
+                LastKnownName="Component7"
+                LastKnownLocation="OrganTree.DesignModel.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="29076b92-dcac-4d85-bfb2-1fd16f3935c8"
+        name="Component7"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7d90df22-b98e-4d3b-9ee1-bbc206ad0932"
+        name="Organtree.Database"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
