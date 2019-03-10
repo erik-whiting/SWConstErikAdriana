@@ -29,10 +29,18 @@
       <SubType>Content</SubType>
       <DependentUpon>OrganTree.componentdiagram</DependentUpon>
     </Content>
+    <Content Include="SequenceDiagrams\AddFamilyMember.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\AddFamilyMember.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\AddFamilyMember.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\OrganTree.DesignModel.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="SequenceDiagrams" />
   </ItemGroup>
   <ItemGroup>
     <Validate Include="OrganTree.layerdiagram">
