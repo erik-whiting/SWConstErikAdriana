@@ -36,6 +36,27 @@
       <SubType>Content</SubType>
       <DependentUpon>SequenceDiagrams\AddFamilyMember.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="SequenceDiagrams\UCAddFamilyMemberUpdated.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\UCAddFamilyMemberUpdated.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\UCAddFamilyMemberUpdated.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="SequenceDiagrams\UCViewPotentialMatchesMPUpdated.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\UCViewPotentialMatchesMPUpdated.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\UCViewPotentialMatchesMPUpdated.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="SequenceDiagrams\ViewPotentialMatches.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\ViewPotentialMatches.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\ViewPotentialMatches.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\OrganTree.DesignModel.uml">
       <SubType>Content</SubType>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a1de9d5c-7df3-49d8-9206-23ef195b07bb" name="UCAddFamilyMemberUpdated" linkedPackageId="9b1bf4c7-9e36-4498-9187-9367eb49bf71" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="a23834b9-10b6-4007-81ca-b6e39f07ea2f">
+      <profileInstance Id="019acd04-e1cd-4cf4-bb9d-e11a60db46c7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="47dd9f48-f8ae-40e5-8eea-177f2ac6c47d">
+      <profileInstance Id="cf8689a0-bc28-42cd-9fc6-5e083a7ec664" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8874e779-c176-4c42-b8ed-53f69f345a89" name="Recipient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0b739a4-4dde-47b3-9750-291dae82e0e8" />
+        <targetEnds>
+          <association Id="2e69a9bc-686b-4895-b0e7-7cf184500c51" isDerived="false" sourceEndRoleName="Recipient" targetEndRoleName="Add Family Member" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5f2bb57e-b317-4e4b-b171-1a71d0b04005" LastKnownName="Add Family Member" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="50b58301-fbf4-46c9-a007-18ebeca0bf72" name="Recipient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d109fc11-ed25-496b-b7e2-8b7ca67d5147" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa6c6f36-697d-4ab1-aaf2-221b40ce66ed" name="Add Family Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d4886cb5-825e-4dcd-99bb-7ca35177f881" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bbc018ac-524e-4dc3-94f3-5ebe4b69936d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5f2bb57e-b317-4e4b-b171-1a71d0b04005" name="Add Family Member" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd5cb7f1-271a-4fdc-9d4d-896619d84036" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a1bca46b-8731-4270-873a-e9c0a72230dc" name="Add Nodes to Family Tree" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32cfb32d-983a-4d2b-a670-0969417a067a" />
+        <extendedCases>
+          <extend Id="bbde92fe-327e-4e2a-9ea4-3c548b39f2f8">
+            <useCaseMoniker Id="5f2bb57e-b317-4e4b-b171-1a71d0b04005" LastKnownName="Add Family Member" />
+            <elementDefinition Id="fee0edc0-a942-4ecb-a2cf-cac5f893d3c0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="9b1bf4c7-9e36-4498-9187-9367eb49bf71" name="OrganTree.DesignModel">
+    <elementDefinition Id="4235980c-8016-4963-afaf-8f365a93b091" />
+  </package>
+</useCaseModelRoot>

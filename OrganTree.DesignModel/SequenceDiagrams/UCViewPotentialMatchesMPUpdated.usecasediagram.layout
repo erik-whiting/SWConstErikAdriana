@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UCViewPotentialMatchesMPUpdated">
+  <useCaseModelRootMoniker Id="db8c69ec-8c65-44d3-84d2-feeb53961d4a" />
+  <nestedChildShapes>
+    <actorShape Id="f2b36d8e-0aed-48a0-a740-2b1baddc62c7" absoluteBounds="3.25, 2.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="29e75b5a-7afa-4209-b273-3400c7fb0a36" LastKnownName="Medical Personnel" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="fbad73bd-56f8-42a2-a950-a16689f27ca3" absoluteBounds="5.125, 2.25, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c25671c7-59ce-49ff-9c78-481693aeecc8" LastKnownName="View Potential Matches" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.75 : 2.625); (5.125 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="73b91791-0113-49e9-b948-b6d5c453793a" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="f2b36d8e-0aed-48a0-a740-2b1baddc62c7" />
+        <useCaseShapeMoniker Id="fbad73bd-56f8-42a2-a950-a16689f27ca3" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="8d328f00-d3f9-4bf3-a7d8-6ecc937d0c03" absoluteBounds="7.25, 2.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="365a75b4-6941-47ba-b5b7-d96284fc6c45" LastKnownName="Seach For Matches" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(7.25 : 2.625); (6.125 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="4adfc228-6a00-4767-8f76-5b7d3d779c84" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="8d328f00-d3f9-4bf3-a7d8-6ecc937d0c03" />
+        <useCaseShapeMoniker Id="fbad73bd-56f8-42a2-a950-a16689f27ca3" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="e4673805-8d28-4dce-95c8-47989350b292" absoluteBounds="5.125, 3.875, 1, 1" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d135f50a-d179-4962-a542-9c0f3e2237d7" LastKnownName="Authorize Medical Personnel to View Family Tree" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(5.625 : 3.875); (5.625 : 3)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="075d7ae9-965a-4eb6-9dbe-5796e056aefc" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="e4673805-8d28-4dce-95c8-47989350b292" />
+        <useCaseShapeMoniker Id="fbad73bd-56f8-42a2-a950-a16689f27ca3" />
+      </nodes>
+    </useCaseDependencyConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

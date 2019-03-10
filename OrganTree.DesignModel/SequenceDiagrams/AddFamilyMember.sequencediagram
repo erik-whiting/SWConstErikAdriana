@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="c7a8271f-1719-4abe-b014-63e3f8744b81" name="AddFamilyMember" linkedPackageId="7e4354be-5f92-4159-9102-adeb7dd08c7b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="c7a8271f-1719-4abe-b014-63e3f8744b81" name="AddFamilyMember" linkedPackageId="7e4354be-5f92-4159-9102-adeb7dd08c7b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <profileInstances>
     <packageHasProfileInstances Id="a9c4c419-c883-4733-89df-b14573023d8a">
       <profileInstance Id="bf571d5a-de1e-4837-95fc-8812be607887" name="StandardProfileL2">
@@ -333,16 +333,16 @@
               <lifelineMoniker Id="0bf2265f-15f7-4ac4-be3b-a437f6762b54" LastKnownName="FamilyTree.aspx" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="66c1dd42-6339-4ec0-8d5e-2315839900f1" name="MessageOccurrenceSpecification16">
-            <elementDefinition Id="62bf1a1d-a672-488b-a31d-ea7f39d3470a" />
-            <covered>
-              <lifelineMoniker Id="0bf2265f-15f7-4ac4-be3b-a437f6762b54" LastKnownName="FamilyTree.aspx" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="c3ed235b-3e3c-42cb-b4ef-56fda274c45e" name="MessageOccurrenceSpecification15">
             <elementDefinition Id="818e6e13-591e-4af1-912c-4e757068299c" />
             <covered>
               <lifelineMoniker Id="fde2b7d6-0147-4aac-8df8-94f7e6afefee" LastKnownName="HomeController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="66c1dd42-6339-4ec0-8d5e-2315839900f1" name="MessageOccurrenceSpecification16">
+            <elementDefinition Id="62bf1a1d-a672-488b-a31d-ea7f39d3470a" />
+            <covered>
+              <lifelineMoniker Id="0bf2265f-15f7-4ac4-be3b-a437f6762b54" LastKnownName="FamilyTree.aspx" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="f73faedb-a3e1-480d-acb2-ca37ffc37119" name="MessageOccurrenceSpecification18">
@@ -439,16 +439,16 @@
               <lifelineMoniker Id="fde2b7d6-0147-4aac-8df8-94f7e6afefee" LastKnownName="HomeController" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="5db1e622-9a1e-4b89-a96f-ee9fc716fb74" name="MessageOccurrenceSpecification24">
-            <elementDefinition Id="638e4294-8de7-40d1-9ab6-dbe947130d0b" />
-            <covered>
-              <lifelineMoniker Id="fde2b7d6-0147-4aac-8df8-94f7e6afefee" LastKnownName="HomeController" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="61b31e9d-2d7c-476e-8cbe-1907915377b9" name="MessageOccurrenceSpecification23">
             <elementDefinition Id="8dfb5f98-d279-401d-8cfb-90d2c9bbf99c" />
             <covered>
               <lifelineMoniker Id="2f140a5f-579b-42e8-9c5f-f5ef3d1648b1" LastKnownName="recipient : Recipient" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5db1e622-9a1e-4b89-a96f-ee9fc716fb74" name="MessageOccurrenceSpecification24">
+            <elementDefinition Id="638e4294-8de7-40d1-9ab6-dbe947130d0b" />
+            <covered>
+              <lifelineMoniker Id="fde2b7d6-0147-4aac-8df8-94f7e6afefee" LastKnownName="HomeController" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="408a7eaa-0b3f-42a2-baaf-98c26d825c7f" name="BehaviorExecutionSpecification9">
@@ -533,16 +533,16 @@
               <lifelineMoniker Id="aa0b1930-78e4-49f0-8203-922ce7e75cd0" LastKnownName="FamilyTree" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="7d4e53f4-d82f-4d40-8720-f1af193a2c66" name="MessageOccurrenceSpecification47">
-            <elementDefinition Id="533577cc-9677-4e85-95f5-06f6acc0870a" />
-            <covered>
-              <lifelineMoniker Id="d10bc944-395a-4869-ae62-1d5c9e20760e" LastKnownName="NodeRepository" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="6914b20d-ebeb-49b6-ae38-f11d7d926205" name="MessageOccurrenceSpecification48">
             <elementDefinition Id="b2dcf0c8-14b2-4782-9e67-b02c391da491" />
             <covered>
               <lifelineMoniker Id="aa0b1930-78e4-49f0-8203-922ce7e75cd0" LastKnownName="FamilyTree" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7d4e53f4-d82f-4d40-8720-f1af193a2c66" name="MessageOccurrenceSpecification47">
+            <elementDefinition Id="533577cc-9677-4e85-95f5-06f6acc0870a" />
+            <covered>
+              <lifelineMoniker Id="d10bc944-395a-4869-ae62-1d5c9e20760e" LastKnownName="NodeRepository" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="67fdcc86-20ec-46f3-9e8e-378e6830768f" name="ExecutionOccurrenceSpecification30">
@@ -618,16 +618,16 @@
               <lifelineMoniker Id="d10bc944-395a-4869-ae62-1d5c9e20760e" LastKnownName="NodeRepository" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="0bb33e3c-3d84-4e37-9149-f542d1da7958" name="MessageOccurrenceSpecification30">
-            <elementDefinition Id="009aad4b-efcb-46c7-86aa-effe1408de3c" />
-            <covered>
-              <lifelineMoniker Id="fde2b7d6-0147-4aac-8df8-94f7e6afefee" LastKnownName="HomeController" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="3035b9e1-42d1-44ee-8d8c-d494695707b2" name="MessageOccurrenceSpecification29">
             <elementDefinition Id="801430f8-e6ea-49a1-8c0b-ccbcd846e17a" />
             <covered>
               <lifelineMoniker Id="aa0b1930-78e4-49f0-8203-922ce7e75cd0" LastKnownName="FamilyTree" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0bb33e3c-3d84-4e37-9149-f542d1da7958" name="MessageOccurrenceSpecification30">
+            <elementDefinition Id="009aad4b-efcb-46c7-86aa-effe1408de3c" />
+            <covered>
+              <lifelineMoniker Id="fde2b7d6-0147-4aac-8df8-94f7e6afefee" LastKnownName="HomeController" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="bc4b413a-7a8f-40e3-bbb1-2ad393e44463" name="ExecutionOccurrenceSpecification18">
@@ -801,16 +801,16 @@
               <lifelineMoniker Id="0bf2265f-15f7-4ac4-be3b-a437f6762b54" LastKnownName="FamilyTree.aspx" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="2a96d5ed-c05a-41e5-98f2-60ba35cacc19" name="MessageOccurrenceSpecification25">
-            <elementDefinition Id="0b8b11ec-f934-4328-8d97-5fbae6b6de3b" />
-            <covered>
-              <lifelineMoniker Id="fde2b7d6-0147-4aac-8df8-94f7e6afefee" LastKnownName="HomeController" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="7964b350-7475-46d5-b7a5-52cf9d8067f3" name="MessageOccurrenceSpecification26">
             <elementDefinition Id="81666fe9-0a5f-4c61-b6a8-907462206a52" />
             <covered>
               <lifelineMoniker Id="2f140a5f-579b-42e8-9c5f-f5ef3d1648b1" LastKnownName="recipient : Recipient" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2a96d5ed-c05a-41e5-98f2-60ba35cacc19" name="MessageOccurrenceSpecification25">
+            <elementDefinition Id="0b8b11ec-f934-4328-8d97-5fbae6b6de3b" />
+            <covered>
+              <lifelineMoniker Id="fde2b7d6-0147-4aac-8df8-94f7e6afefee" LastKnownName="HomeController" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="bdfccf06-8ae9-482d-8018-b0c2722d9c8e" name="ExecutionOccurrenceSpecification16">
