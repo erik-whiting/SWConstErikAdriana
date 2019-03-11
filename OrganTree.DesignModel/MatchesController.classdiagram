@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="f2acad40-e262-4227-926a-64465f6aad6c" name="MatchesController" linkedPackageId="8a133551-4fd5-4a58-af04-3a1f8b579f62" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1c4c9622-67f4-477c-a353-ce6024bcafa6">
+      <profileInstance Id="47b42ad2-b916-45dc-8722-c296e79373e1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6bdbcdbd-49f5-4713-8b23-8d90346c0a4b">
+      <profileInstance Id="d547d4c9-b43c-44c7-a682-d3c6ed3eee38" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6c0a9563-2d9a-460a-873e-f82a6f28bffc" name="MatchesController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c9089cbf-f097-4466-b29a-d5c1ab7cef86" />
+        <ownedAttributesInternal>
+          <property Id="ddbe04bc-c8bb-42fd-a2c3-ed0288499706" name="matchFound" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b4ba4c19-7251-4119-9eb8-9ae0ab18b76d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a12e72ca-4df9-4b5a-a67b-b67acf09c038" LastKnownName="boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="653e7194-7a55-4502-a0ee-5dbe4dcbdc99" name="GetMatches" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="18ff2e8e-dff3-45ac-977e-236da881ec17" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7d76ec68-90fa-4312-abc9-94555c590e51" name="root" direction="In" isUnique="false">
+                  <elementDefinition Id="a4d5bfde-6f8a-4419-876b-5c542ad3842d" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a43aca38-86f6-4ac9-80af-b9ce79ad7b77" direction="Return" isUnique="false">
+                  <elementDefinition Id="02c35d90-b61c-4fe3-bee6-be7cd0992069" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="767a572b-7e8c-4f48-bbd5-0890b4d60f7c" LastKnownName="NodeList" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cda36b75-6fcc-4347-96e7-0337c6d1970c" name="GetMatchNode" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3bfb6f5f-2392-46ae-a371-1f1d37e50c10" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5a808c4e-9da4-4905-a488-a011dc9c1b3e" name="id" direction="In" isUnique="false">
+                  <elementDefinition Id="4a89b42b-64ae-47c9-8d39-f44be63222de" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3856e44d-4149-46a1-a847-8c6be3a4a206" direction="Return" isUnique="false">
+                  <elementDefinition Id="72d852cd-5789-4447-8afc-bbd13f7756f1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59ab6cc8-23c1-47a2-8149-172649c17f77" LastKnownName="PatientNode" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="83720ab3-6e8a-4b72-ab12-ca47791f4e6b" name="Matches.aspx" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bb0b1336-c9ed-4c7d-a226-50e226590450" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="677d12d2-49b5-4276-863a-9d0fd9214687" name="NodesPartial.aspx" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3638d5f9-b780-480c-b1ff-a1a648a8e432" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a12e72ca-4df9-4b5a-a67b-b67acf09c038" name="boolean" isAbstract="false" isLeaf="false" cachedFullName="boolean">
+        <elementDefinition Id="e58f85d5-f7cf-428e-ad9b-7dc952913c5c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="767a572b-7e8c-4f48-bbd5-0890b4d60f7c" name="NodeList" isAbstract="false" isLeaf="false" cachedFullName="NodeList">
+        <elementDefinition Id="a5274cf1-0632-4a05-b731-bfdb7c6ddff3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="59ab6cc8-23c1-47a2-8149-172649c17f77" name="PatientNode" isAbstract="false" isLeaf="false" cachedFullName="OrganTree.DesignModel::PatientNode">
+        <elementDefinition Id="ce5898d0-acc3-43fb-9091-a17cc9117554" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="8a133551-4fd5-4a58-af04-3a1f8b579f62" name="OrganTree.DesignModel">
+    <elementDefinition Id="4235980c-8016-4963-afaf-8f365a93b091" />
+  </package>
+</logicalClassDesignerModel>

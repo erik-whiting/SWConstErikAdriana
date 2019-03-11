@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e0941f8e-bb24-436c-a598-62d5d488c51d" name="HomeControllerclassdiagram" linkedPackageId="7d50d90d-64d0-47b9-aab4-587395f0a181" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9c662fa7-7e60-4d89-9040-0ef99a6d3334">
+      <profileInstance Id="e6a9cbd3-98a8-47d1-bdf3-5055b244e20f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8bd5d8e1-402e-41c1-bfeb-9315422a4597">
+      <profileInstance Id="ae25f608-2ee0-43f3-972b-1274c4b05d63" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a1b9ad4e-a0f1-4b4a-8a57-c02493db2f3f" name="HomeController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3455e754-0503-4b17-9e3d-f64ccccc158b" />
+        <suppliersInternal>
+          <dependency Id="1edff7a6-3459-45c4-b6b0-6c9a87b907b5">
+            <classMoniker Id="5c821880-dc15-4219-b058-313f100d743c" LastKnownName="FamilyTree.aspx" />
+            <elementDefinition Id="db6a3c13-065b-49f2-88b9-5af849834b72" />
+          </dependency>
+          <dependency Id="d4c35e6b-ca98-4163-a071-0ed21bb9a8aa">
+            <classMoniker Id="811fa134-2357-4ef4-9cc1-b2aa0d558e6b" LastKnownName="Home.aspx" />
+            <elementDefinition Id="03ded6c9-af0c-4fa1-a885-3f25202093ac" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="00157aa1-aab0-4a0c-bdbe-6ab98f68463c" name="_nodeRepository" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="80f6de4a-7963-448f-a4f3-62c26757db38" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="55b66232-c7e4-4ce2-b4db-823423a70f54" LastKnownName="INodeRepository" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b7568f0e-41d0-42de-86ae-90210765a88e" name="Index" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="89165ddf-2ea1-47ee-a32c-bb3b7091d4b2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2ae4ef3a-774d-4729-b5d5-4d18370d1372" direction="Return" isUnique="false">
+                  <elementDefinition Id="fe995f26-cb00-4c8b-b9a7-64fc5507eba2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="073e0f81-d950-4e4c-9eca-e33778be3e50" LastKnownName="ActionResult" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="008c4f94-ebfc-4afe-ad01-9b7f2874a4a6" name="HomeController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3fcf1ede-f132-4730-97b1-40d541e34328" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="70af3a6f-3542-4ce9-962a-d0a934123403" name="nodeRepository" direction="In" isUnique="false">
+                  <elementDefinition Id="eb4b6c8e-abc9-4cdc-99e0-b8a9b8867b6f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="33363eb6-0805-4d47-bde4-22b333828153" direction="Return" isUnique="false">
+                  <elementDefinition Id="7ffa5f06-35fc-45b1-ac2b-cb277a434659" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="55b66232-c7e4-4ce2-b4db-823423a70f54" LastKnownName="INodeRepository" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2d16991d-6676-4db2-8953-4b88231f9cb0" name="FamilyTree" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c638638a-78e4-4694-9684-eac7198dc2bc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="89882a2a-7bed-4e43-b03c-6ec01030bbe4" name="root" direction="In" isUnique="false">
+                  <elementDefinition Id="d8209983-9a3f-40aa-8bd3-45d032c89ca7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6e2ec9e1-b57a-49e9-a1f8-8d5c968ce539" LastKnownName="Node" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a7e5e3a8-f035-4d18-bd85-032aebe59f56" direction="Return" isUnique="false">
+                  <elementDefinition Id="71b1818c-3ac5-47e7-9bee-141dfa8f68c8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="073e0f81-d950-4e4c-9eca-e33778be3e50" LastKnownName="ActionResult" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5c821880-dc15-4219-b058-313f100d743c" name="FamilyTree.aspx" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d0e5039f-e210-4d82-b567-1adafc89d293" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="073e0f81-d950-4e4c-9eca-e33778be3e50" name="ActionResult" isAbstract="false" isLeaf="false" cachedFullName="ActionResult">
+        <elementDefinition Id="a211d8ab-f5e3-49a1-b500-fb2a63404e70" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="55b66232-c7e4-4ce2-b4db-823423a70f54" name="INodeRepository" isAbstract="false" isLeaf="false" cachedFullName="INodeRepository">
+        <elementDefinition Id="e5dcd706-3995-4088-81ca-5689a8eeb9d7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6e2ec9e1-b57a-49e9-a1f8-8d5c968ce539" name="Node" isAbstract="false" isLeaf="false" cachedFullName="Node">
+        <elementDefinition Id="a6716ef2-1a31-488b-a2f5-369821edf51d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="811fa134-2357-4ef4-9cc1-b2aa0d558e6b" name="Home.aspx" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a63d191d-eeea-417c-a6e1-8a24e38ff1b7" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="7d50d90d-64d0-47b9-aab4-587395f0a181" name="OrganTree.DesignModel">
+    <elementDefinition Id="4235980c-8016-4963-afaf-8f365a93b091" />
+  </package>
+</logicalClassDesignerModel>

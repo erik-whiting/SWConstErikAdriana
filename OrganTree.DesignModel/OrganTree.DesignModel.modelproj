@@ -22,6 +22,27 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="FamilyTree.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FamilyTree.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FamilyTree.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="HomeControllerclassdiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HomeControllerclassdiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HomeControllerclassdiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="MatchesController.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MatchesController.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MatchesController.classdiagram</DependentUpon>
+    </Content>
     <Content Include="OrganTree.componentdiagram">
       <SubType>Content</SubType>
     </Content>
