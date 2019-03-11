@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UCAddFamilyMemberUpdated">
+  <useCaseModelRootMoniker Id="a1de9d5c-7df3-49d8-9206-23ef195b07bb" />
+  <nestedChildShapes>
+    <actorShape Id="01feb263-0a30-4671-baf4-7d3deafd6f92" absoluteBounds="2.375, 2.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="8874e779-c176-4c42-b8ed-53f69f345a89" LastKnownName="Recipient" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="8729d051-3dce-46b2-b09a-7d99c8388f8a" absoluteBounds="4, 2.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="5f2bb57e-b317-4e4b-b171-1a71d0b04005" LastKnownName="Add Family Member" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.875 : 3.125); (4 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="2e69a9bc-686b-4895-b0e7-7cf184500c51" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="01feb263-0a30-4671-baf4-7d3deafd6f92" />
+        <useCaseShapeMoniker Id="8729d051-3dce-46b2-b09a-7d99c8388f8a" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="5f2735e4-5573-446c-a673-7622c5c990e1" absoluteBounds="6, 2.75, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a1bca46b-8731-4270-873a-e9c0a72230dc" LastKnownName="Add Nodes to Family Tree" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(6 : 3.125); (5 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="bbde92fe-327e-4e2a-9ea4-3c548b39f2f8" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="5f2735e4-5573-446c-a673-7622c5c990e1" />
+        <useCaseShapeMoniker Id="8729d051-3dce-46b2-b09a-7d99c8388f8a" />
+      </nodes>
+    </extendConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
