@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="db8c69ec-8c65-44d3-84d2-feeb53961d4a" name="UCViewPotentialMatchesMPUpdated" linkedPackageId="e7331bfb-2099-4014-896d-9fc4be6c870b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="0c1ca797-aefd-4a7a-a14e-980ef9e2f592">
+      <profileInstance Id="11b6ed9a-88e1-41fa-8ab9-6d179d3e6574" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1d756baf-4ece-45ce-8f29-ba4a9d4a86c2">
+      <profileInstance Id="21a7de9b-6dd2-466c-9355-26977656381f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="29e75b5a-7afa-4209-b273-3400c7fb0a36" name="Medical Personnel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f22c65cb-183b-468e-9772-fa5d58d441e0" />
+        <targetEnds>
+          <association Id="73b91791-0113-49e9-b948-b6d5c453793a" isDerived="false" sourceEndRoleName="Medical Personnel" targetEndRoleName="View Potential Matches" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c25671c7-59ce-49ff-9c78-481693aeecc8" LastKnownName="View Potential Matches" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a742c90d-7949-4bcb-b21b-9f7cadafc0ea" name="Medical Personnel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d7af8d58-b32e-4fa7-8634-7827a18ee8e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa1216d9-c4f0-465f-a8d3-ce711955c3fb" name="View Potential Matches" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eb1501dc-2384-49d1-9320-af52f3fb19f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9f6e2211-5574-44b0-8ebd-c1afdd13113f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c25671c7-59ce-49ff-9c78-481693aeecc8" name="View Potential Matches" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6bf3e362-b607-48a4-8dee-e71418abcce8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="365a75b4-6941-47ba-b5b7-d96284fc6c45" name="Seach For Matches" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f4cfa934-7aed-4693-837c-96be772514de" />
+        <extendedCases>
+          <extend Id="4adfc228-6a00-4767-8f76-5b7d3d779c84">
+            <useCaseMoniker Id="c25671c7-59ce-49ff-9c78-481693aeecc8" LastKnownName="View Potential Matches" />
+            <elementDefinition Id="80044bc3-449d-4fcf-b20f-6d43480083db" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d135f50a-d179-4962-a542-9c0f3e2237d7" name="Authorize Medical Personnel to View Family Tree" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="276507be-a630-42f0-be57-63ef4abe0194" />
+        <suppliersInternal>
+          <dependency Id="075d7ae9-965a-4eb6-9dbe-5796e056aefc">
+            <useCaseMoniker Id="c25671c7-59ce-49ff-9c78-481693aeecc8" LastKnownName="View Potential Matches" />
+            <elementDefinition Id="6fb1a0d4-8bb6-41bf-9788-b36188467d5d" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e7331bfb-2099-4014-896d-9fc4be6c870b" name="OrganTree.DesignModel">
+    <elementDefinition Id="4235980c-8016-4963-afaf-8f365a93b091" />
+  </package>
+</useCaseModelRoot>
