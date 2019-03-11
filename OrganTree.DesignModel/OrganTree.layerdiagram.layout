@@ -102,7 +102,7 @@
         </layerShape>
       </nestedChildShapes>
     </layerShape>
-    <commentShape Id="1b7515fb-216d-4ab2-9c38-ef40fae11fd3" absoluteBounds="6.625, 6.5, 1.25, 0.5" customColor="255, 255, 204">
+    <commentShape Id="1b7515fb-216d-4ab2-9c38-ef40fae11fd3" absoluteBounds="6.625, 6.5, 1.25, 0.75" customColor="255, 255, 204">
       <commentMoniker Id="f723cbed-f3c1-4613-9ecd-fa2fa1cfb206" />
       <relativeChildShapes />
     </commentShape>
@@ -113,7 +113,7 @@
         <layerShapeMoniker Id="6897aebd-3a2b-4814-aa40-a9892d0ef482" />
       </nodes>
     </commentConnector>
-    <dependencyConnector edgePoints="[(2.125 : 5.75); (2.125 : 6.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <dependencyConnector edgePoints="[(2.125 : 5.75); (2.125 : 6.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <dependencyFromLayerToLayerMoniker Id="7b55105d-ef2d-4617-9574-1905d2d049e5" />
       <relativeChildShapes />
       <nodes>
@@ -125,7 +125,7 @@
       <commentMoniker Id="bf2a476d-2bec-49de-aa37-0dd6e7c36487" />
       <relativeChildShapes />
     </commentShape>
-    <commentConnector edgePoints="[(8.375 : 5.25); (7.625 : 5.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="b31d9df9-a57a-4264-ac29-ffbdedc9a9e7" customColor="Black">
+    <commentConnector edgePoints="[(8.625 : 5.25); (7.625 : 5.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="b31d9df9-a57a-4264-ac29-ffbdedc9a9e7" customColor="Black">
       <relativeChildShapes />
       <nodes>
         <commentShapeMoniker Id="42be3534-5b2f-4518-aec4-9b075ebda297" />
@@ -136,7 +136,7 @@
       <commentMoniker Id="d8826641-69d3-458e-b57d-37bd8156b44f" />
       <relativeChildShapes />
     </commentShape>
-    <commentConnector edgePoints="[(8.375 : 2.9375); (7.625 : 2.9375)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="b31d9df9-a57a-4264-ac29-ffbdedc9a9e7" customColor="Black">
+    <commentConnector edgePoints="[(8.375 : 2.9375); (7.625 : 2.9375)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="b31d9df9-a57a-4264-ac29-ffbdedc9a9e7" customColor="Black">
       <relativeChildShapes />
       <nodes>
         <commentShapeMoniker Id="fabc87e5-0c21-4fd0-9645-00b18d0712c1" />

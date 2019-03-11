@@ -2,8 +2,8 @@
 <layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e2a65d9d-ed8f-40f4-8b20-32b4f756283d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
   <comments>
     <comment Id="f723cbed-f3c1-4613-9ecd-fa2fa1cfb206" name="Comment1">
-      <body>Views 
-SProcs &amp; UDFs for common CRUD ops</body>
+      <body>Views
+SProcs and UDFs for common CRUD operatoins</body>
       <layerElements>
         <linkFromCommentToLayerElement>
           <layerMoniker Id="412373ee-8795-42ec-9b34-501f0dfed45d" />
